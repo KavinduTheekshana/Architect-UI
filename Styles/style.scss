@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+}
+a {
+  text-decoration: none !important;
+}
+body {
+  box-sizing: border-box;
+}
+.main-wrapper {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  .row {
+    justify-content: center;
+    .center {
+      width: 100% !important;
+      justify-content: center;
+      .name {
+        text-align-last: justify;
+        text-transform: uppercase;
+        letter-spacing: 2vh;
+        margin-right: -2vh;
+      }
+      .content {
+        .menu {
+          width: 100%;
+          height: 600px;
+          background-color: aqua;
+          .top {
+            padding-top: 20px;
+            height: 70%;
+            width: 100%;
+            background-color: bisque;
+            .menu-nav {
+              a {
+                text-transform: uppercase;
+              }
+            }
+          }
+          .bottum {
+            height: 30%;
+            width: 100%;
+            background-color: aqua;
+          }
+        }
+        .gallery {
+          width: 100%;
+          height: 600px;
+          background-color: aqua;
+          display: flex;
+          .glt1 {
+            width: 20%;
+            height: 70%;
+            background-color: blue;
+            .glt1-1{
+              width: 100%;
+              height: 50%;
+              background-color: coral;
+            }
+            .glt1-2{
+              width: 100%;
+              height: 50%;
+              background-color: darkgoldenrod;
+            }
+          }
+          .glt2 {
+            width: 60%;
+            height: 70%;
+            background-color: blueviolet;
+            .glt2-1{
+              width: 100%;
+              height: 40%;
+              background-color: olivedrab;
+              display: flex;
+              .glt2-1-1{
+                width: 50%;
+                height: 100%;
+                background-color: slategrey;
+              }
+              .glt2-1-2{
+                width: 50%;
+                height: 100%;
+                background-color: black;
+              }
+            }
+            .glt2-2{
+              width: 100%;
+              height: 60%;
+              background-color: orangered;
+              display: flex;
+              .glt2-2-1{
+                width: 60%;
+                height: 100%;
+                background-color: blue;
+              }
+              .glt2-2-2{
+                width: 40%;
+                height: 100%;
+                background-color: chartreuse;
+              }
+            }
+          }
+          .glt3 {
+            width: 20%;
+            height: 100%;
+            background-color: brown;
+            .glt3-1{
+              width: 100%;
+              height: 35%;
+              background-color: cornflowerblue;
+            }
+            .glt3-2{
+              width: 100%;
+              height: 25%;
+              background-color: darkgreen;
+            }
+            .glt3-3{
+              width: 100%;
+              height: 40%;
+              background-color: darkmagenta;
+            }
+          }
+          .glb1 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80%;
+            height: 30%;
+            background-color: chartreuse;
+            display: inherit;
+            .glb1-1{
+              width: calc(100% / 3);
+              height: 100%;
+              background-color: darkslategray;
+            }
+            .glb1-2{
+              width: calc(100% / 3);
+              height: 100%;
+              background-color: lightcoral;
+            }
+            .glb1-3{
+              width: calc(100% / 3);
+              height: 100%;
+              background-color: maroon;
+            }
+          }
+        }
+      }
+      .bottum-name {
+        margin: 1rem 0 0 0;
+        justify-content: space-between;
+        .left-name {
+          text-align: left;
+          text-transform: uppercase;
+          letter-spacing: 1vh;
+        }
+        .right-name {
+          text-align: rightF;
+          text-transform: uppercase;
+          letter-spacing: 1vh;
+          margin-right: -1vh;
+        }
+      }
+    }
+  }
+}
