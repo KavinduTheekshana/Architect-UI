@@ -226,6 +226,13 @@ body {
 }
 
 @media only screen and (max-width: 769px) {
+  .gray-bg {
+    width: auto;
+  }
+  .gray-bg .color {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .mob-header {
     display: block;
   }
@@ -670,6 +677,17 @@ body {
   margin-top: 5px;
   width: 100%;
   cursor: pointer;
+}
+
+.main-wrapper .row .center .content .gray-bg .contact-details {
+  padding-left: 25px;
+  padding-right: 10px;
+}
+
+.main-wrapper .row .center .content .gray-bg .contact-details p {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
 }
 
 .main-wrapper .row .center .bottum-name {

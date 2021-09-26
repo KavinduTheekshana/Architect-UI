@@ -245,6 +245,13 @@ body {
 }
 
 @media only screen and (max-width: 769px) {
+  .gray-bg{
+    width: auto;
+    .color{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
   .mob-header {
     display: block;
   }
@@ -647,6 +654,15 @@ body {
                   cursor: pointer;
                 }
               }
+            }
+          }
+          .contact-details{
+            padding-left: 25px;
+            padding-right: 10px;
+            p{
+              font-family: "Open Sans", sans-serif !important;
+              font-size: 10px !important;
+              font-weight: 600 !important;
             }
           }
         }
