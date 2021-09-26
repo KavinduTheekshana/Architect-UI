@@ -23,8 +23,6 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-
-
   </head>
   <body>
     <div class="main-wrapper">
@@ -37,12 +35,17 @@
                 <div class="menu">
                   <div class="top">
                     <nav class="nav flex-column menu-nav">
-                      <a class="nav-link active" href="#">Home</a>
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="index.html">Home</a>
+                      <a
+                        class="nav-link"
+                        onclick="myGallery()"
+                        href="about.html"
+                        >About</a
+                      >
                       <a
                         id="gallery-menu"
-                        class="nav-link"
-                        onclick="myFunction()"
+                        class="nav-link active"
+                        onclick="myGallery()"
                         href="#"
                         >gallery</a
                       >
@@ -54,31 +57,82 @@
                       id="second-menu-gallery"
                       class="nav flex-column second-menu-nav d-none"
                     >
-                      <a class="nav-link" href="#">Example 1</a>
-                      <a class="nav-link" href="#">Example 2</a>
-                      <a class="nav-link" href="#">Example 3</a>
-                      <a class="nav-link" href="#">Example 3</a>
+                      <a class="nav-link" href="#">Lake villa by Carlson </a>
+
+                      <a class="nav-link" href="#">Urban compact living </a>
+                      <a class="nav-link" href="#">“Vasthu” converter</a>
+                      <a class="nav-link" href="#">Urban remake </a>
+                      <a class="nav-link" href="#">Small Dutch house</a>
+                      <a class="nav-link" href="#">Bigger the faster </a>
+                      <a class="nav-link" href="#"
+                        >“Lavinia mews” guesthouse
+                      </a>
+                      <a class="nav-link" href="#">Less is strong </a>
+                      <a class="nav-link" href="#">Random clicks</a>
+                      <a class="nav-link" href="#"
+                        >Adaptable studio apartment</a
+                      >
+                    </nav>
+
+                    <nav
+                      id="second-menu-gallery-content"
+                      class="nav flex-column second-menu-nav"
+                    >
+                      <a
+                        class="nav-link"
+                        href="about.html"
+                        >LAKE VILLA BY CARLSON
+                      </a>
+                      <p>
+                        THIS IS A RENOVATION AND CONVERSION OF AN OLD BUILDING
+                        TO A VILLA. SITUATED NEAR BOLGODA RIVER.A TROPHICAL
+                        ARCHITECURAL CHRACTER WITH SCANDINAVIAN TOUCH WAS THE
+                        DESIGN PHILOSOPHY.RUSTIC MODERN FINISHES MADE THE SKIN
+                        OF THE BUILDING.
+                      </p>
                     </nav>
                   </div>
-                  <div class="bottum"><img src="Image/logo.png" alt="" /></div>
+                  <div class="bottum">
+                    <div class="color">
+                      <a href="index.html">
+                        <img src="Image/logo.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col col-md-10 p-0">
-                <div class="gray-bg"><div class="color">
-                  <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="Image/1.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="Image/2.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="Image/3.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="Image/4.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="Image/5.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="Image/6.jpg" alt=""></div>
-                      <div class="swiper-slide"><img src="Image/7.jpg" alt=""></div>
+                <div class="gray-bg">
+                  <div class="color">
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="Image/1.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="Image/2.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="Image/3.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="Image/4.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="Image/5.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="Image/6.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="Image/7.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                   </div>
-                </div></div>
+                </div>
               </div>
             </div>
             <div class="row bottum-name p-0">
@@ -108,19 +162,17 @@
       crossorigin="anonymous"
     ></script>
 
-      <!-- Swiper JS -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
-
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
     <script src="Scripts/main.js"></script>
   </body>
