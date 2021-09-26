@@ -40,3 +40,22 @@ function myAwards() {
       $("#gallery-menu").removeClass("active");
     }
 }
+
+// ----------- Header ----------------
+$(document).ready(function () {
+  $('#navbar-toggler-menu').click(function(event) {
+    // $('.navbar-demo').toggleClass('open-nav');
+    $('.navbar-demo').addClass('open-nav');
+    $('#navbar-toggler-menu').addClass('d-none');
+    $('#navbar-toggler-times').removeClass('d-none');
+  });
+
+  $('#navbar-toggler-times').click(function(event) {
+    // $('.navbar-demo').toggleClass('open-nav');
+    $('.navbar-demo').removeClass('open-nav');
+    $('#navbar-toggler-menu').removeClass('d-none');
+    $('#navbar-toggler-times').addClass('d-none');
+  });
+
+
+});

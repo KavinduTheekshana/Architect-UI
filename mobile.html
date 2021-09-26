@@ -17,31 +17,73 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="Styles/css/style.css" />
-
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css">
   </head>
   <body>
+
+<div class="mob-header">
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light mt-4">
+        <a class="navbar-brand" href="#"><img src="Image/logo-mob-icon.png" alt=""></a>
+        <button id="navbar-toggler-menu" class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <button id="navbar-toggler-times" class="navbar-toggler d-none" type="button">
+            <i class="fas fa-times" style="font-size: 25px;"></i>
+          </button>
+      
+
+      </nav>
+</div>
+    
+
+      <header id="header" class="navbar-demo" style="position: absolute;top: 0; width: 250px;">
+      <div class="nav-bar">
+        <nav class="nav flex-column menu-nav">
+            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a
+              id="gallery-menu"
+              class="nav-link"
+              onclick="myGallery()"
+              href="#"
+              >gallery</a
+            >
+            <a
+              id="awards-menu"
+              class="nav-link"
+              onclick="myAwards()"
+              href="#"
+              >Awards</a
+            >
+            <a class="nav-link" href="#">contact</a>
+          </nav>
+		
+	</div>
+</header>
+
+    
+</div>
+
+
+
+
+
+
+
     <div class="main-wrapper">
       <div class="container">
         <div class="row m-0 p-0">
-          <div class="col col-md-9 center m-0 p-0">
+          <div class="col col-md-12 col-lg-9 col-sm-12 center m-0 p-0">
             <p class="name">damith .s. munasinghe associates</p>
             <div class="content row m-0 p-0">
-              <div class="col col-md-2 pr-1 pl-0">
+              <div class="col col-md-2 pr-1 pl-0 side-menu">
                 <div class="menu">
                   <div class="top">
                     <nav class="nav flex-column menu-nav">
-                      <a class="nav-link" href="index.html">Home</a>
-                      <a
-                        class="nav-link"
-                        onclick="myGallery()"
-                        href="about.html"
-                        >About</a
-                      >
+                      <a class="nav-link active" href="index.html">Home</a>
+                      <a class="nav-link" href="about.html">About</a>
                       <a
                         id="gallery-menu"
                         class="nav-link"
@@ -104,34 +146,77 @@
                 </div>
               </div>
               <div class="col col-md-10 p-0">
-                <div class="gray-bg">
-                  <div class="color">
-                    <div class="swiper mySwiper">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <img src="Image/1.jpg" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="Image/2.jpg" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="Image/3.jpg" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="Image/4.jpg" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="Image/5.jpg" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="Image/6.jpg" alt="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="Image/7.jpg" alt="" />
-                        </div>
+                <div class="gallery">
+                  <div class="glt1">
+                    <div class="glt1-1">
+                      <a href="gallery.html">
+                        <img class="image-holder" src="Image/1.jpg" alt=""
+                      /></a>
+                    </div>
+                    <div class="glt1-2">
+                      <a href="#">
+                        <img class="image-holder" src="Image/5.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="glt2">
+                    <div class="glt2-1">
+                      <div class="glt2-1-1">
+                        <a href="#">
+                          <img class="image-holder" src="Image/2.jpg" alt="" />
+                        </a>
                       </div>
-                      <div class="swiper-button-next"></div>
-                      <div class="swiper-button-prev"></div>
+                      <div class="glt2-1-2">
+                        <a href="#">
+                          <img class="image-holder" src="Image/3.jpg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="glt2-2">
+                      <div class="glt2-2-1">
+                        <a href="#">
+                          <img class="image-holder" src="Image/6.jpg" alt="" />
+                        </a>
+                      </div>
+                      <div class="glt2-2-2">
+                        <a href="#">
+                          <img class="image-holder" src="Image/7.jpg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="glt3">
+                    <div class="glt3-1">
+                      <a href="#">
+                        <img class="image-holder" src="Image/4.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="glt3-2">
+                      <a href="#">
+                        <img class="image-holder" src="Image/8.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="glt3-3">
+                      <a href="#">
+                        <img class="image-holder" src="Image/12.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="glb1">
+                    <div class="glb1-1">
+                      <a href="#">
+                        <img class="image-holder" src="Image/9.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="glb1-2">
+                      <a href="#">
+                        <img class="image-holder" src="Image/10.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="glb1-3">
+                      <a href="#">
+                        <img class="image-holder" src="Image/11.jpg" alt="" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -163,18 +248,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
 
     <script src="Scripts/main.js"></script>
   </body>
