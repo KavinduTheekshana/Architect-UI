@@ -36,7 +36,12 @@
                   <div class="top">
                     <nav class="nav flex-column menu-nav">
                       <a class="nav-link" href="index.html">Home</a>
-                      <a class="nav-link active" href="about.html">About</a>
+                      <a
+                        class="nav-link"
+                        onclick="myGallery()"
+                        href="about.html"
+                        >About</a
+                      >
                       <a
                         id="gallery-menu"
                         class="nav-link"
@@ -44,7 +49,7 @@
                         href="#"
                         >gallery</a
                       >
-                      <a class="nav-link" href="awards.html">Awards</a>
+                      <a class="nav-link active" href="awards.html">Awards</a>
                       <a class="nav-link" href="#">contact</a>
                     </nav>
                   </div>
@@ -71,22 +76,23 @@
                     </nav>
 
                     <nav
-                      id="second-menu-about"
+                      id="second-menu-gallery-content"
                       class="nav flex-column second-menu-nav"
                     >
                       <a
                         class="nav-link"
-                        style="margin-top: 40px"
                         href="about.html"
-                        >dsma design team</a
-                      >
+                        >FIRST RUNNER UP  
+                        WINING DESIGN 
+                      </a>
+                      <p>
+                        THIS IS A RENOVATION AND CONVERSION OF AN OLD BUILDING
+                        TO A VILLA. SITUATED NEAR BOLGODA RIVER.A TROPHICAL
+                        ARCHITECURAL CHRACTER WITH SCANDINAVIAN TOUCH WAS THE
+                        DESIGN PHILOSOPHY.RUSTIC MODERN FINISHES MADE THE SKIN
+                        OF THE BUILDING.
+                      </p>
                     </nav>
-
-
-                  
-
-
-
                   </div>
                   <div class="bottum">
                     <div class="color">
@@ -100,41 +106,32 @@
               <div class="col col-md-10 p-0">
                 <div class="gray-bg">
                   <div class="color">
-                    <div class="about">
-                      <div class="container">
-                        <div class="col-md-10 center m-auto">
-                          <div class="justify-content-center align-items-cente">
-                            <h6 class="align-middle">
-                              DAMITH S MUNASINGHE ASSOCIATES (DSMA),
-                            </h6>
-                            <p>
-                              is a registered organization with a qualified
-                              young team of Architects, Interior designers,
-                              Landscape Architects, Engineers, Green Consultants
-                              and Quantity Surveyors. The DSMA provides a total
-                              solution of Architectural, Interior designing,
-                              Structural Engineering, MEP Engineering and
-                              Quantity Surveying. They are always specific and
-                              committed to encourage Clients towards the use of
-                              environmentally friendly practices and
-                              aesthetically unique design attributes. (DSMA) is
-                              a renowned architectural firm specializing in the
-                              innovative and progressive design of commercial,
-                              industrial, Institutional, Recreational,
-                              Residential projects in Sri Lanka. The
-                              architectural Firm is set up as a design studio.
-                              It provides a philosophy dedicated service to
-                              produce the possible best quality product. DSMA
-                              takes every project as a fresh job and crafts an
-                              artifact with a unique character and a meaning
-                              after considering carefully the client’s need.
-                            </p>
-                            <div class="team">
-                              <img src="Image/team.png" alt="" />
-                            </div>
-                          </div>
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="Image/1.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="Image/2.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="Image/3.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="Image/4.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="Image/5.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="Image/6.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="Image/7.jpg" alt="" />
                         </div>
                       </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
                     </div>
                   </div>
                 </div>
@@ -169,6 +166,15 @@
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
     <script src="Scripts/main.js"></script>
   </body>
