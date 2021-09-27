@@ -684,10 +684,36 @@ body {
   padding-right: 10px;
 }
 
+.main-wrapper .row .center .content .gray-bg .contact-details h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px !important;
+  text-align: left;
+  margin-bottom: 30px !important;
+}
+
 .main-wrapper .row .center .content .gray-bg .contact-details p {
-  font-family: "Open Sans", sans-serif !important;
-  font-size: 10px !important;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px !important;
   font-weight: 600 !important;
+}
+
+.main-wrapper .row .center .content .gray-bg .contact-details .upper {
+  text-transform: uppercase;
+}
+
+.main-wrapper .row .center .content .gray-bg .contact-details .social-icon img {
+  width: 25px;
+  margin: 10px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.main-wrapper .row .center .content .gray-bg .contact-details .social-icon img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  cursor: pointer;
 }
 
 .main-wrapper .row .center .bottum-name {
