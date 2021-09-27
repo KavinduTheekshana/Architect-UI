@@ -9,12 +9,16 @@ function myGallery() {
         $("#second-menu-awards").addClass("d-none");
         $("#gallery-menu").addClass("active");
         $("#awards-menu").removeClass("active");
+        $("#bottum").addClass("d-none");
+        $("#middle").addClass("full-height");
       } else{
         $("#second-menu-gallery").addClass("d-none");
         $("#second-menu-about").removeClass("d-none");
         $("#second-menu-gallery-content").removeClass("d-none");
         // $("#second-menu-awards").removeClass("d-none");
         $("#gallery-menu").removeClass("active");
+        $("#bottum").removeClass("d-none");
+        $("#middle").removeClass("full-height");
       }
   }
 

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -366,10 +365,11 @@ body {
 }
 
 .main-wrapper .row .center .content .menu .top .menu-nav a {
-  font-size: 14px;
+  font-size: 12px;
   padding-top: 0;
   font-family: "Open Sans", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
+  line-height: 15px;
   text-transform: uppercase;
   color: white;
 }
@@ -382,15 +382,16 @@ body {
   background-color: #888888;
   width: 100%;
   height: 35%;
+  overflow: auto;
 }
 
 .main-wrapper .row .center .content .menu .middle .second-menu-nav a {
-  font-size: 8px;
+  font-size: 10px;
   padding-top: 0;
   padding-bottom: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  color: #ffcc5f;
+  color: #e0cf3b;
   text-transform: uppercase;
 }
 
@@ -403,13 +404,22 @@ body {
   font-family: "Josefin Sans", sans-serif;
   color: white;
   font-style: italic;
-  font-size: 7px;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+
+.main-wrapper .row .center .content .menu .middle .second-menu-nav .nav-link {
+  padding-left: 10px;
+}
+
+.main-wrapper .row .center .content .menu .full-height {
+  height: 65% !important;
 }
 
 .main-wrapper .row .center .content .menu .bottum {
   height: 30%;
   width: 100%;
-  padding-top: 3px;
+  padding-top: 4px;
   background-color: #888888;
 }
 
@@ -419,6 +429,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  margin-top: 1px;
 }
 
 .main-wrapper .row .center .content .menu .bottum .color a {
@@ -430,7 +441,7 @@ body {
 }
 
 .main-wrapper .row .center .content .menu .bottum .color a img {
-  width: 80%;
+  width: 60%;
   height: auto;
   margin: auto;
 }
@@ -667,7 +678,8 @@ body {
 }
 
 .main-wrapper .row .center .content .gray-bg .color .about p {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
   font-weight: 500;
   font-size: 10px;
   text-align: justify;
@@ -685,20 +697,32 @@ body {
 }
 
 .main-wrapper .row .center .content .gray-bg .contact-details h6 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px !important;
   text-align: left;
   margin-bottom: 30px !important;
 }
 
 .main-wrapper .row .center .content .gray-bg .contact-details p {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 12px !important;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px !important;
   font-weight: 600 !important;
+  color: black !important;
+}
+
+.main-wrapper .row .center .content .gray-bg .contact-details p a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: black !important;
+}
+
+.main-wrapper .row .center .content .gray-bg .contact-details p a:hover {
+  color: blue !important;
 }
 
 .main-wrapper .row .center .content .gray-bg .contact-details .upper {
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .main-wrapper .row .center .content .gray-bg .contact-details .social-icon img {
@@ -747,15 +771,31 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .image-holder:hover {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 /*# sourceMappingURL=style.css.map */

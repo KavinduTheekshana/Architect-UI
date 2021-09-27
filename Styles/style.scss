@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -377,10 +377,11 @@ body {
             background-color: #888888;
             .menu-nav {
               a {
-                font-size: 14px;
+                font-size: 12px;
                 padding-top: 0;
                 font-family: "Open Sans", sans-serif;
-                font-weight: 800;
+                font-weight: 700;
+                line-height: 15px;
                 text-transform: uppercase;
                 color: white;
                 &:hover {
@@ -393,14 +394,16 @@ body {
             background-color: #888888;
             width: 100%;
             height: 35%;
+            overflow: auto;
+         
             .second-menu-nav {
               a {
-                font-size: 8px;
+                font-size: 10px;
                 padding-top: 0;
                 padding-bottom: 0;
                 font-family: "Open Sans", sans-serif;
                 font-weight: 600;
-                color: #ffcc5f;
+                color: #e0cf3b;
                 text-transform: uppercase;
                 &:hover {
                   color: #d9d9d9 !important;
@@ -411,26 +414,34 @@ body {
                 font-family: "Josefin Sans", sans-serif;
                 color: white;
                 font-style: italic;
-                font-size: 7px;
+                font-size: 10px;
+                text-transform: capitalize;
+              }
+              .nav-link{
+                padding-left: 10px;
               }
             }
+          }
+          .full-height{
+            height: 65%!important;
           }
           .bottum {
             height: 30%;
             width: 100%;
-            padding-top: 3px;
+            padding-top: 4px;
             background-color: #888888;
 
             .color {
               background-color: black;
               display: flex;
               height: 100%;
+              margin-top: 1px;
               a {
                 width: 100%;
                 display: flex;
                 height: 100%;
                 img {
-                  width: 80%;
+                  width: 60%;
                   height: auto;
                   margin: auto;
                 }
@@ -618,7 +629,8 @@ body {
                 margin-bottom: 10px;
               }
               p {
-                font-family: "Josefin Sans", sans-serif;
+                font-family: "Open Sans", sans-serif;
+                font-style: italic;
                 font-weight: 500;
                 font-size: 10px;
                 text-align: justify;
@@ -636,18 +648,30 @@ body {
             padding-left: 25px;
             padding-right: 10px;
             h6 {
-              font-family: "Josefin Sans", sans-serif;
+              font-family: "Open Sans", sans-serif;
               font-size: 16px !important;
               text-align: left;
               margin-bottom: 30px !important;
             }
             p {
-              font-family: "Josefin Sans", sans-serif;
-              font-size: 12px !important;
+              font-family: "Open Sans", sans-serif;
+              font-size: 13px !important;
               font-weight: 600 !important;
+              color: black !important;
+            }
+            p{
+              a{
+                font-family: "Open Sans", sans-serif;
+              font-size: 13px !important;
+              font-weight: 600 !important;
+              color: black !important;
+              &:hover{
+                color: blue !important;
+              }
+              }
             }
             .upper {
-              text-transform: uppercase;
+              text-transform: capitalize;
             }
             .social-icon {
               img {
@@ -692,10 +716,24 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(100%);
-  transition: 0.3s ease-in-out;
+  filter: grayscale(0);
+  transition: 0.2s ease-in-out;
   &:hover {
-    filter: grayscale(0);
+    filter: grayscale(50%);
     cursor: pointer;
   }
+}
+
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F5F5; 
+}
+::-webkit-scrollbar-thumb {
+  background: #000; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
