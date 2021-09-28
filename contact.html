@@ -27,12 +27,13 @@
   <body onload="Justify()">
     <div class="mob-header">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light mt-4">
+        <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="#"
             ><img src="Image/logo-mob-icon.png" alt=""
           /></a>
           <button id="navbar-toggler-menu" class="navbar-toggler" type="button">
-            <span class="navbar-toggler-icon"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <img src="Image/icon/menu.svg" alt="">
           </button>
 
           <button
@@ -40,15 +41,22 @@
             class="navbar-toggler d-none"
             type="button"
           >
-            <i class="fas fa-times" style="font-size: 25px"></i>
+          <img src="Image/icon/close.svg" alt="">
           </button>
         </nav>
+        <div class="row ml-0 mr-0 mt-0 mb-4">
+          <div class="col col-md-12 col-lg-9 col-sm-12 center m-0 p-0">
+            <p id="character_justify4" class="name-top">
+              damith .s. munasinghe associates
+            </p>
+          </div>
+        </div>
       </div>
 
       <header
         id="header"
-        class="navbar-demo"
-        style="position: absolute; top: 0; width: 250px"
+        class="navbar-demo d-none-custom"
+        
       >
         <div class="nav-bar">
           <nav class="nav flex-column menu-nav">
@@ -143,98 +151,14 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="col col-md-2 pr-1 pl-0 side-menu">
-                <div class="menu">
-                  <div class="top">
-                    <nav class="nav flex-column menu-nav">
-                      <a class="nav-link" href="index.html">Home</a>
-                      <a class="nav-link " href="about.html">About</a>
-                      <a
-                        id="gallery-menu"
-                        class="nav-link"
-                        onclick="myGallery()"
-                        href="#"
-                        >gallery</a
-                      >
-                      <a
-                        id="awards-menu"
-                        class="nav-link"
-                        onclick="myAwards()"
-                        href="#"
-                        >Awards</a
-                      >
-                      <a class="nav-link active" href="#">contact</a>
-                    </nav>
-                  </div>
-                  <div class="middle">
-                    <nav
-                      id="second-menu-gallery"
-                      class="nav flex-column second-menu-nav d-none"
-                    >
-                      <a class="nav-link" href="gallery.html"
-                        >Lake villa by Carlson
-                      </a>
-
-                      <a class="nav-link" href="#">Urban compact living </a>
-                      <a class="nav-link" href="#">“Vasthu” converter</a>
-                      <a class="nav-link" href="#">Urban remake </a>
-                      <a class="nav-link" href="#">Small Dutch house</a>
-                      <a class="nav-link" href="#">Bigger the faster </a>
-                      <a class="nav-link" href="#"
-                        >“Lavinia mews” guesthouse
-                      </a>
-                      <a class="nav-link" href="#">Less is strong </a>
-                      <a class="nav-link" href="#">Random clicks</a>
-                      <a class="nav-link" href="#"
-                        >Adaptable studio apartment</a
-                      >
-                    </nav>
-
-                    <nav
-                      id="second-menu-about"
-                      class="nav flex-column second-menu-nav"
-                    >
-                      <a
-                        class="nav-link"
-                        style="margin-top: 40px"
-                        href="about.html"
-                        >dsma design team</a
-                      >
-                    </nav>
-
-                    <nav
-                      id="second-menu-awards"
-                      class="nav flex-column second-menu-nav d-none"
-                    >
-                      <a class="nav-link" href="awards.html"
-                        >FIRST RUNNER UP WINING DESIGN
-                      </a>
-
-                      <a class="nav-link" href="#"
-                        >FIRST RUNNER UP WINING DESIGN 2
-                      </a>
-                    </nav>
-                  </div>
-                  <div class="bottum">
-                    <div class="color">
-                      <a href="index.html">
-                        <img src="Image/logo.png" alt=""
-                      /></a>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
+             
               <div class="col col-md-10 p-0">
                 <div class="gray-bg">
                   <div class="color">
-                    <div class="about">
+                    <div class="contact">
                       <div
                         class="map"
-                        style="
-                          width: 50%;
-                          height: 100%;
-                          background-color: black;
-                        "
+                
                       >
                         <iframe
                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.2602890309076!2d79.87648801477255!3d6.859375695043009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b8173f1cef1%3A0xa1240a91216a72fc!2s79%20Kadawatha%20Rd%2C%20Colombo%2010350!5e0!3m2!1sen!2slk!4v1632737020193!5m2!1sen!2slk"
@@ -245,7 +169,7 @@
                           loading="lazy"
                         ></iframe>
                       </div>
-                      <div class="contact-details" style="width: 50%">
+                      <div class="contact-details">
                         <div class="container">
 
                           <div class="row">
@@ -257,10 +181,10 @@
 
 
                           <div class="row">
-                            <div class="col-md-3 p-0 m-0">
+                            <div class="col-md-3 col-sm-3 col-3 p-0 m-0">
                               <p>Address :</p>
                             </div>
-                            <div class="col-md-9 p-0 m-0">
+                            <div class="col-md-9 col-sm-9 col-9 p-0 m-0">
                               <p class="upper">
                                 Damith s munasinghe associates,<br />
                                 79A kadawatha rd dehiwala<br />
@@ -269,10 +193,10 @@
                           </div>
 
                           <div class="row">
-                            <div class="col-md-3 p-0 m-0">
+                            <div class="col-md-3 col-sm-3 col-3 p-0 m-0">
                               <p>Tel :</p>
                             </div>
-                            <div class="col-md-9 p-0 m-0">
+                            <div class="col-md-9 col-sm-9 col-9 p-0 m-0">
                               <p>
                                 +94 71 60 64 291<br />
                                 +94 11 27 62 501<br />
@@ -282,10 +206,10 @@
                           </div>
 
                           <div class="row">
-                            <div class="col-md-3 p-0 m-0">
+                            <div class="col-md-3 col-sm-3 col-3 p-0 m-0">
                               <p>Email :</p>
                             </div>
-                            <div class="col-md-9 p-0 m-0">
+                            <div class="col-md-9 col-sm-9 col-9 p-0 m-0">
                              <a href="mailto: damith@dsma.lk"> <p>
                                 damith@dsma.lk </a>
                                 <br />

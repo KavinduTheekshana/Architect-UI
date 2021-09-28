@@ -15,6 +15,10 @@ body {
   color: #d9d9d9 !important;
 }
 
+.fs-25 {
+  font-size: 25px !important;
+}
+
 #character_justify {
   position: relative;
   width: 100%;
@@ -24,21 +28,21 @@ body {
 
 #character_justify2 {
   position: relative;
-  width: 50%;
-  font-size: 12pt;
+  width: 40%;
+  // font-size: 12pt;
   border: 1px solid #fff;
 }
 
 #character_justify3 {
   position: relative;
-  width: 45%;
-  font-size: 12pt;
+  width: 40%;
+  // font-size: 12pt;
   border: 1px solid #fff;
 }
 
 .name-top {
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   color: #000;
   margin-top: 10px;
   font-size: 11px;
@@ -48,16 +52,25 @@ body {
 }
 
 // ----------- Mobile -------------
+#navbar-toggler-menu {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+}
 .navbar-toggler-icon {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  background-image: url(../Image/icon/menu.svg) !important;
 }
 #navbar-toggler-times {
   position: absolute;
   right: 0;
   bottom: 0;
+  img {
+    width: 25px;
+  }
 }
 .navbar-expand-lg {
   padding-left: 0 !important;
@@ -85,6 +98,31 @@ body {
   display: none;
 }
 @media only screen and (max-width: 769px) {
+  .about{
+    .align-items-cente{
+padding: 20px 0;
+    }
+  }
+  .color {
+    padding: 0 !important;
+    .contact {
+      display: block !important;
+      .map {
+        width: 100% !important;
+        height: 250px;
+      }
+      .contact-details{
+        width: 100% !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .social-icon{
+          justify-content: start;
+          margin-left: -30px;
+        }
+      }
+    }
+  }
+
   #character_justify {
     display: none !important;
   }
@@ -219,7 +257,7 @@ body {
 // ---------------------- media public --------------
 @media only screen and (max-width: 769px) {
   .main-wrapper {
-    min-height: calc(100vh - 130px) !important;
+    min-height: calc(100vh - 180px) !important;
     .content {
       .menu {
         height: 420px !important;
@@ -260,7 +298,7 @@ body {
     font-size: 17px !important;
   }
   .main-wrapper {
-    min-height: calc(100vh - 130px) !important;
+    min-height: calc(100vh - 180px) !important;
     .name {
       font-size: 17px !important;
       margin-right: 0px !important;
@@ -293,6 +331,7 @@ body {
     .bottum-name {
       p {
         font-size: 13px !important;
+        font-weight: 600 !important;
         margin-right: 0px !important;
       }
     }
@@ -313,6 +352,7 @@ body {
       p {
         font-size: 10px !important;
         margin-right: 0px !important;
+        font-weight: 600 !important;
       }
     }
   }
@@ -379,7 +419,8 @@ body {
         text-justify: inter-word;
         // letter-spacing: 16px;
         margin-right: -1vh;
-        margin-bottom: 50px;
+        margin-bottom: 2.5rem;
+        // margin-bottom: 50px;
       }
       .content {
         .menu {
@@ -664,8 +705,40 @@ body {
                 }
               }
             }
+            .contact {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              text-align: center;
+              .center {
+                justify-content: center;
+              }
+              h6 {
+                font-family: "Open Sans", sans-serif;
+                font-weight: 800;
+                font-size: 10px;
+                margin: auto;
+                margin-bottom: 10px;
+              }
+              p {
+                font-family: "Open Sans", sans-serif;
+                font-style: italic;
+                font-weight: 500;
+                font-size: 10px;
+                text-align: justify;
+              }
+              .team {
+                img {
+                  margin-top: 5px;
+                  width: 100%;
+                  cursor: pointer;
+                }
+              }
+            }
           }
           .contact-details {
+            width: 50%;
             padding-left: 25px;
             padding-right: 10px;
             h6 {
@@ -760,4 +833,10 @@ body {
 .d-none-custom {
   transition: 0.9s ease-in-out;
   z-index: -1;
+}
+
+.map {
+  width: 50%;
+  height: 100%;
+  background-color: black;
 }
