@@ -97,18 +97,38 @@ body {
 .mob-header {
   display: none;
 }
-@media only screen and (max-width: 769px) {
-  .mySwiper{
-    .swiper-slide{
-      // height: auto !important;
-      img{
-        // width: 100% !important;
-        // width: fit-content !important;
-        // height: fit-content !important;
+#header{
+  .nav-bar{
+    .nav-link{
+      text-align: initial;
+    }
+  }
+  .nav-link{
+    padding: 10px 0 0 0 !important;
+  }
+  .sub-gallery,.sub-awards{
+    ul{
+      display: block;
+      li{
+        a{
+          text-align: left;
+          line-height: 20px;
+          font-size: 9px;
+          padding: 0;
+          float: left;
+          font-family: "Open Sans", sans-serif;
+                font-style: italic;
+                color: #e0cf3b;
+                text-transform: uppercase;
+                &:hover {
+                  color: #d9d9d9 !important;
+                }
+        }
       }
     }
-   
   }
+}
+@media only screen and (max-width: 769px) {
   .about {
     .align-items-cente {
       padding: 20px 0;

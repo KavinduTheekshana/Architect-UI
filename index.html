@@ -31,7 +31,7 @@
           /></a>
           <button id="navbar-toggler-menu" class="navbar-toggler" type="button">
             <!-- <span class="navbar-toggler-icon"></span> -->
-            <img src="Image/icon/menu.svg" alt="">
+            <img src="Image/icon/menu.svg" alt="" />
           </button>
 
           <button
@@ -39,7 +39,7 @@
             class="navbar-toggler d-none"
             type="button"
           >
-          <img src="Image/icon/close.svg" alt="">
+            <img src="Image/icon/close.svg" alt="" />
           </button>
         </nav>
         <div class="row ml-0 mr-0 mt-0 mb-4">
@@ -51,21 +51,38 @@
         </div>
       </div>
 
-      <header
-        id="header"
-        class="navbar-demo d-none-custom"
-        
-      >
+      <header id="header" class="navbar-demo d-none-custom">
         <div class="nav-bar">
           <nav class="nav flex-column menu-nav">
             <a class="nav-link active" href="index.html">Home</a>
             <a class="nav-link" href="about.html">About</a>
-            <a id="gallery-menu" class="nav-link" onclick="myGallery()" href="#"
+
+            <a id="gallery-menu" class="nav-link" onclick="myGalleryMob()" href="#"
               >gallery</a
             >
-            <a id="awards-menu" class="nav-link" onclick="myAwards()" href="#"
+            <div id="sub-gallery" class="sub-gallery d-none">
+              <ul>
+                <li><a href="#">● Lake villa by Carlson</a></li>
+                <li><a href="#">● Urban compact living</a></li>
+                <li><a href="#">● “Vasthu” converter</a></li>
+                <li><a href="#">● Urban remake</a></li>
+                <li><a href="#">● Small Dutch house</a></li>
+                <li><a href="#">● Bigger the faster</a></li>
+                <li><a href="#">● “Lavinia mews” guesthouse</a></li>
+                <li><a href="#">● Less is strong</a></li>
+                <li><a href="#">● Random clicks</a></li>
+                <li><a href="#">● Adaptable studio apartmen</a></li>
+              </ul>
+            </div>
+            <a id="awards-menu" class="nav-link" onclick="myAwardsMob()" href="#"
               >Awards</a
             >
+            <div id="sub-awards" class="sub-awards d-none">
+            <ul>
+              <li><a href="#">● SLIA design completion award 2018</a></li>
+              <li><a href="#">● SLIA design completion award 2015</a></li>
+            </ul>
+          </div>
             <a class="nav-link" href="contact.html">contact</a>
           </nav>
         </div>
@@ -105,37 +122,27 @@
                   </div>
                   <div id="middle" class="middle">
                     <nav
-                      id="second-menu-gallery"
-                      class="nav flex-column second-menu-nav d-none"
-                    >
-                      <a class="nav-link" href="gallery-2-6.html"
-                        >● Lake villa by Carlson
-                      </a>
+                    id="second-menu-gallery"
+                    class="nav flex-column second-menu-nav d-none"
+                  >
+                    <a class="nav-link" href="gallery-2-6.html"
+                      >● Lake villa by Carlson
+                    </a>
 
-                      <a class="nav-link" href="gallery-5-7-12.html"
-                        >● Urban compact living
-                      </a>
-                      <a class="nav-link" href="#">● “Vasthu” converter</a>
-                      <a class="nav-link" href="#">● Urban remake </a>
-                      <a class="nav-link" href="gallery-8.html"
-                        >● Small Dutch house</a
-                      >
-                      <a class="nav-link" href="gallery-3-4.html"
-                        >● Bigger the faster
-                      </a>
-                      <a class="nav-link" href="#"
-                        >● “Lavinia mews” guesthouse
-                      </a>
-                      <a class="nav-link" href="gallery-1-9.html"
-                        >● Less is strong
-                      </a>
-                      <a class="nav-link" href="gallery-11.html"
-                        >● Random clicks</a
-                      >
-                      <a class="nav-link" href="gallery-adaptable.html"
-                        >● Adaptable studio apartment</a
-                      >
-                    </nav>
+                    <a class="nav-link" href="gallery-5-7-12.html">● Urban compact living </a>
+                    <a class="nav-link" href="gallery-vasthu-convertor.html">● “Vasthu” converter</a>
+                    <a class="nav-link" href="gallery-10.html">● Urban remake </a>
+                    <a class="nav-link" href="gallery-8.html">● Small Dutch house</a>
+                    <a class="nav-link" href="gallery-3-4.html">● Bigger the faster </a>
+                    <a class="nav-link" href="#"
+                      >● “Lavinia mews” guesthouse
+                    </a>
+                    <a class="nav-link" href="gallery-1-9.html">● Less is strong </a>
+                    <a class="nav-link" href="gallery-random.html">● Random clicks</a>
+                    <a class="nav-link" href="gallery-adaptable.html"
+                      >● Adaptable studio apartment</a
+                    >
+                  </nav>
 
                     <nav
                       id="second-menu-awards"
@@ -228,7 +235,7 @@
                       </a>
                     </div>
                     <div class="glb1-3">
-                      <a href="gallery-11.html">
+                      <a href="gallery-random.html">
                         <img class="image-holder" src="Image/11.jpg" alt="" />
                       </a>
                     </div>

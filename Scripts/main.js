@@ -22,6 +22,15 @@ function myGallery() {
   }
 }
 
+function myGalleryMob() {
+  if ($("#sub-gallery").hasClass("d-none")) {
+    $("#sub-gallery").removeClass("d-none");
+    $("#sub-awards").addClass("d-none");
+  }else{
+    $("#sub-gallery").addClass("d-none");
+  }
+}
+
 // ----------- Awards Show and Hide ---------------
 function myAwards() {
   var val = 0;
@@ -40,6 +49,15 @@ function myAwards() {
   if (!$("#second-menu-gallery").hasClass("d-none")) {
     $("#second-menu-gallery").addClass("d-none");
     $("#gallery-menu").removeClass("active");
+  }
+}
+
+function myAwardsMob() {
+  if ($("#sub-awards").hasClass("d-none")) {
+    $("#sub-awards").removeClass("d-none");
+    $("#sub-gallery").addClass("d-none");
+  }else{
+    $("#sub-awards").addClass("d-none");
   }
 }
 
