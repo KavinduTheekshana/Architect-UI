@@ -25,6 +25,7 @@
     />
   </head>
   <body onload="Justify()">
+
     <div class="mob-header">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light mt-4">
@@ -66,13 +67,12 @@
       </header>
     </div>
 
-    <div class="main-wrapper">
+
+    <div class="main-wrapper" onload="Justify()">
       <div class="container">
         <div class="row m-0 p-0">
-          <div class="col col-md-12 col-lg-9 col-sm-12 center m-0 p-0">
-            <p id="character_justify" class="name">
-              damith .s. munasinghe associates
-            </p>
+          <div class="col col-md-9 center m-0 p-0">
+            <p id="character_justify"  class="name">damith .s. munasinghe associates</p>
             <div class="content row m-0 p-0">
               <div class="col col-md-2 pr-1 pl-0 side-menu">
                 <div class="menu">
@@ -133,6 +133,26 @@
                         >Award 2
                       </a>
                     </nav>
+
+                    <nav
+                    id="second-menu-gallery-content"
+                    class="nav flex-column second-menu-nav"
+                  >
+                    <a
+                      class="nav-link"
+                      href="about.html"
+                      >LAKE VILLA BY CARLSON
+                    </a>
+                    <p>
+                      THIS IS A RENOVATION AND CONVERSION OF AN OLD BUILDING
+                      TO A VILLA. SITUATED NEAR BOLGODA RIVER.A TROPHICAL
+                      ARCHITECURAL CHRACTER WITH SCANDINAVIAN TOUCH WAS THE
+                      DESIGN PHILOSOPHY.RUSTIC MODERN FINISHES MADE THE SKIN
+                      OF THE BUILDING.
+                    </p>
+                  </nav>
+
+                  
                   </div>
                   <div id="bottum" class="bottum">
                     <div class="color">
@@ -148,22 +168,27 @@
                   <div class="top">
                     <nav class="nav flex-column menu-nav">
                       <a class="nav-link" href="index.html">Home</a>
-                      <a class="nav-link " href="about.html">About</a>
+                      <a
+                        class="nav-link"
+                        onclick="myGallery()"
+                        href="about.html"
+                        >About</a
+                      >
                       <a
                         id="gallery-menu"
-                        class="nav-link"
+                        class="nav-link active"
                         onclick="myGallery()"
                         href="#"
                         >gallery</a
                       >
                       <a
-                        id="awards-menu"
-                        class="nav-link"
-                        onclick="myAwards()"
-                        href="#"
-                        >Awards</a
-                      >
-                      <a class="nav-link active" href="#">contact</a>
+                      id="awards-menu"
+                      class="nav-link"
+                      onclick="myAwards()"
+                      href="#"
+                      >Awards</a
+                    >
+                      <a class="nav-link" href="contact.html">contact</a>
                     </nav>
                   </div>
                   <div class="middle">
@@ -171,9 +196,7 @@
                       id="second-menu-gallery"
                       class="nav flex-column second-menu-nav d-none"
                     >
-                      <a class="nav-link" href="gallery.html"
-                        >Lake villa by Carlson
-                      </a>
+                      <a class="nav-link" href="gallery.html">Lake villa by Carlson </a>
 
                       <a class="nav-link" href="#">Urban compact living </a>
                       <a class="nav-link" href="#">“Vasthu” converter</a>
@@ -191,29 +214,37 @@
                     </nav>
 
                     <nav
-                      id="second-menu-about"
+                      id="second-menu-gallery-content"
                       class="nav flex-column second-menu-nav"
                     >
                       <a
                         class="nav-link"
-                        style="margin-top: 40px"
                         href="about.html"
-                        >dsma design team</a
-                      >
+                        >LAKE VILLA BY CARLSON
+                      </a>
+                      <p>
+                        THIS IS A RENOVATION AND CONVERSION OF AN OLD BUILDING
+                        TO A VILLA. SITUATED NEAR BOLGODA RIVER.A TROPHICAL
+                        ARCHITECURAL CHRACTER WITH SCANDINAVIAN TOUCH WAS THE
+                        DESIGN PHILOSOPHY.RUSTIC MODERN FINISHES MADE THE SKIN
+                        OF THE BUILDING.
+                      </p>
                     </nav>
 
                     <nav
-                      id="second-menu-awards"
-                      class="nav flex-column second-menu-nav d-none"
-                    >
-                      <a class="nav-link" href="awards.html"
-                        >FIRST RUNNER UP WINING DESIGN
-                      </a>
+                    id="second-menu-awards"
+                    class="nav flex-column second-menu-nav d-none"
+                  >
+                    <a class="nav-link" href="awards.html"
+                      >FIRST RUNNER UP WINING DESIGN
+                    </a>
 
-                      <a class="nav-link" href="#"
-                        >FIRST RUNNER UP WINING DESIGN 2
-                      </a>
-                    </nav>
+                    <a class="nav-link" href="#"
+                      >FIRST RUNNER UP WINING DESIGN 2
+                    </a>
+                  </nav>
+
+                  
                   </div>
                   <div class="bottum">
                     <div class="color">
@@ -227,178 +258,99 @@
               <div class="col col-md-10 p-0">
                 <div class="gray-bg">
                   <div class="color">
-                    <div class="about">
-                      <div
-                        class="map"
-                        style="
-                          width: 50%;
-                          height: 100%;
-                          background-color: black;
-                        "
-                      >
-                        <iframe
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.2602890309076!2d79.87648801477255!3d6.859375695043009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25b8173f1cef1%3A0xa1240a91216a72fc!2s79%20Kadawatha%20Rd%2C%20Colombo%2010350!5e0!3m2!1sen!2slk!4v1632737020193!5m2!1sen!2slk"
-                          width="100%"
-                          height="100%"
-                          style="border: 0"
-                          allowfullscreen=""
-                          loading="lazy"
-                        ></iframe>
-                      </div>
-                      <div class="contact-details" style="width: 50%">
-                        <div class="container">
-
-                          <div class="row">
-                            <div class="col-md-12 p-0 m-0">
-                              <h6>Contact Details</h6>
-                            </div>
-                           
-                          </div>
-
-
-                          <div class="row">
-                            <div class="col-md-3 p-0 m-0">
-                              <p>Address :</p>
-                            </div>
-                            <div class="col-md-9 p-0 m-0">
-                              <p class="upper">
-                                Damith s munasinghe associates,<br />
-                                79A kadawatha rd dehiwala<br />
-                              </p>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="col-md-3 p-0 m-0">
-                              <p>Tel :</p>
-                            </div>
-                            <div class="col-md-9 p-0 m-0">
-                              <p>
-                                +94 71 60 64 291<br />
-                                +94 11 27 62 501<br />
-                                +94 71 13 53 275
-                              </p>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <div class="col-md-3 p-0 m-0">
-                              <p>Email :</p>
-                            </div>
-                            <div class="col-md-9 p-0 m-0">
-                             <a href="mailto: damith@dsma.lk"> <p>
-                                damith@dsma.lk </a>
-                                <br />
-                                <a href="mailto: dsmadetails@gmail.com">  dsmadetails@gmail.com </a><br />
-                                <a href="mailto: dsmaoffice@gmail.com">    dsmaoffice@gmail.com</a>
-                              </p>
-                            </div>
-                          </div>
-
-                          <div class="row social-icon">
-                            <a href="#" target="_blank"> <img src="Image/icon/facebook.svg" alt=""></a>
-                           <a href="" target="_blank"><img src="Image/icon/linkedin.svg" alt=""></a>
-                           <a href="" target="_blank"><img src="Image/icon/instagram (2).svg" alt=""></a>
-                           <a href="" target="_blank"><img src="Image/icon/twitter.svg" alt=""></a>
-                           <a href="" target="_blank"><img src="Image/icon/youtube.svg" alt=""></a>
-                           <a href="https://api.whatsapp.com/send?phone=94716064291&text=WHATEVER_LINK_OR_TEXT_YOU_WANT_TO_SEND" target="_blank"><img src="Image/icon/whatsapp.svg" alt=""></a>
-                            
-                          </div>
-
-
-                          <!-- <form action="">
-                            <div class="row">
-                              <div class="col-md-12 m-0 p-0">
-                                <h6 style="text-align: left">Contact Us</h6>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="col-md-12 m-0 pl-0">
-                                <input
-                                  type="text"
-                                  placeholder="Contact Number"
-                                  style="width: 100%; padding-left: 3px"
-                                />
-                              </div>
-                            </div>
-
-                            <div class="row mt-1">
-                              <div class="col-md-12 m-0 pl-0">
-                                <textarea
-                                  name="w3review"
-                                  placeholder="Your Message Here"
-                                  rows="4"
-                                  style="width: 100%; padding: 3px"
-                                ></textarea>
-                              </div>
-                            </div>
-
-                            <div class="row mt-1">
-                              <div class="col-md-12 m-0 plF-0">
-                                <input
-                                  type="button"
-                                  value="Submit"
-                                  style="width: 100%"
-                                />
-                              </div>
-                            </div>
-                          </form> -->
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                      
+                        <div class="swiper-slide">
+                          <img src="Image/projects/2-6/A.jpg" alt="" />
                         </div>
+                        <div class="swiper-slide">
+                            <img src="Image/projects/2-6/B.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/C.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/D.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/E.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/F.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/G.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/H.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/I.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/J.jpg" alt="" />
+                          </div>
+                         
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/L.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/M.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/N.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/O.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/P.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/Q.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/R.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/S.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/T.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/U.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/V.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/W.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/X.jpg" alt="" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="Image/projects/2-6/Y.jpg" alt="" />
+                          </div>
+                  
                       </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row bottum-name p-0">
-              <p id="character_justify2" class="left-name">
-                chartred architects
-              </p>
-              <p id="character_justify3" class="right-name">
-                interior designers
-              </p>
+              <p id="character_justify2" class="left-name">chartred architects</p>
+              <p id="character_justify3" class="right-name">interior designers</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/61519e13d326717cb6838195/1fgjd2v8k';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-    <!--End of Tawk.to Script-->
-
-    <!-- <div class="fb-customerchat"
- page_id="107931377456972"
- minimized="true">
-</div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '912333495590130',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v2.11'
-    });
-  };
-(function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -420,6 +372,15 @@
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
     <script src="Scripts/main.js"></script>
   </body>
