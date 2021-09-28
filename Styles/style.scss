@@ -376,6 +376,9 @@ body {
             width: 100%;
             background-color: #888888;
             .menu-nav {
+              .nav-link{
+                padding-left: 10px;
+              }
               a {
                 font-size: 12px;
                 padding-top: 0;
