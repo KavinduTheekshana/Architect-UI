@@ -194,16 +194,21 @@ function Justify() {
 
 // ---------------- gallery Mobile----------------
 
-// $(document).ready(function () {
-//   var width = $(window).width();
-//   console.log(width);
-// });
-
-window.addEventListener("resize", () => {
-    var width = $(window).width();
-if (width<=769) {
-  $(".swiper-slide").removeClass("height");
-} else {
-  $(".swiper-slide").addClass("height");
-}
+$(document).ready(function () {
+  var width = $(window).width();
+  // console.log(width);
+  if (width<=769) {
+    $(".swiper-slide").removeClass("height");
+  } else {
+    $(".swiper-slide").addClass("height");
+  }
 });
+
+// window.addEventListener("resize", () => {
+//     var width = $(window).width();
+// if (width<=769) {
+//   $(".swiper-slide").removeClass("height");
+// } else {
+//   $(".swiper-slide").addClass("height");
+// }
+// });
