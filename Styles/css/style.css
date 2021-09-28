@@ -724,13 +724,13 @@ body {
 }
 
 .main-wrapper .row .center .content .gray-bg .color .mySwiper .swiper-slide {
-  height: 494px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
 }
 
 .main-wrapper .row .center .content .gray-bg .color .mySwiper .swiper-slide img {
@@ -738,6 +738,10 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+}
+
+.main-wrapper .row .center .content .gray-bg .color .mySwiper .height {
+  height: 494px;
 }
 
 .main-wrapper .row .center .content .gray-bg .color .mySwiper .swiper-button-next,

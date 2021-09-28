@@ -98,9 +98,20 @@ body {
   display: none;
 }
 @media only screen and (max-width: 769px) {
-  .about{
-    .align-items-cente{
-padding: 20px 0;
+  .mySwiper{
+    .swiper-slide{
+      // height: auto !important;
+      img{
+        // width: 100% !important;
+        // width: fit-content !important;
+        // height: fit-content !important;
+      }
+    }
+   
+  }
+  .about {
+    .align-items-cente {
+      padding: 20px 0;
     }
   }
   .color {
@@ -111,11 +122,11 @@ padding: 20px 0;
         width: 100% !important;
         height: 250px;
       }
-      .contact-details{
+      .contact-details {
         width: 100% !important;
         padding-top: 20px;
         padding-bottom: 20px;
-        .social-icon{
+        .social-icon {
           justify-content: start;
           margin-left: -30px;
         }
@@ -659,15 +670,18 @@ padding: 20px 0;
             height: 100%;
             .mySwiper {
               .swiper-slide {
-                height: 494px;
                 justify-content: center;
                 display: flex;
+                margin: auto;
                 img {
                   // width: 100%;
                   height: 100%;
                   object-fit: cover;
                   overflow: hidden;
                 }
+              }
+              .height{
+                height: 494px;
               }
               .swiper-button-next,
               .swiper-button-prev {

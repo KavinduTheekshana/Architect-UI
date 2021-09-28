@@ -1,77 +1,66 @@
 // ----------- Gallery Show and Hide ---------------
 function myGallery() {
-    var val = 0;
-    var x = document.getElementById('second-menu-gallery');
-    if ($( "#second-menu-gallery" ).hasClass( "d-none" )) {
-        $("#second-menu-gallery").removeClass("d-none");
-        $("#second-menu-about").addClass("d-none");
-        $("#second-menu-gallery-content").addClass("d-none");
-        $("#second-menu-awards").addClass("d-none");
-        $("#gallery-menu").addClass("active");
-        $("#awards-menu").removeClass("active");
-        // $("#bottum").addClass("d-none");
-        // $("#middle").addClass("full-height");
-      } else{
-        $("#second-menu-gallery").addClass("d-none");
-        $("#second-menu-about").removeClass("d-none");
-        $("#second-menu-gallery-content").removeClass("d-none");
-        // $("#second-menu-awards").removeClass("d-none");
-        $("#gallery-menu").removeClass("active");
-        // $("#bottum").removeClass("d-none");
-        // $("#middle").removeClass("full-height");
-      }
+  var val = 0;
+  var x = document.getElementById("second-menu-gallery");
+  if ($("#second-menu-gallery").hasClass("d-none")) {
+    $("#second-menu-gallery").removeClass("d-none");
+    $("#second-menu-about").addClass("d-none");
+    $("#second-menu-gallery-content").addClass("d-none");
+    $("#second-menu-awards").addClass("d-none");
+    $("#gallery-menu").addClass("active");
+    $("#awards-menu").removeClass("active");
+    // $("#bottum").addClass("d-none");
+    // $("#middle").addClass("full-height");
+  } else {
+    $("#second-menu-gallery").addClass("d-none");
+    $("#second-menu-about").removeClass("d-none");
+    $("#second-menu-gallery-content").removeClass("d-none");
+    // $("#second-menu-awards").removeClass("d-none");
+    $("#gallery-menu").removeClass("active");
+    // $("#bottum").removeClass("d-none");
+    // $("#middle").removeClass("full-height");
   }
+}
 
-  
-
-  // ----------- Awards Show and Hide ---------------
+// ----------- Awards Show and Hide ---------------
 function myAwards() {
   var val = 0;
-  var x = document.getElementById('second-menu-awards');
-  if ($( "#second-menu-awards" ).hasClass( "d-none" )) {
-      $("#second-menu-awards").removeClass("d-none");
-      $("#second-menu-about").addClass("d-none");
-      $("#second-menu-gallery-content").addClass("d-none");
-      $("#awards-menu").addClass("active");
-    } else{
-      $("#second-menu-awards").addClass("d-none");
-      $("#second-menu-about").removeClass("d-none");
-      $("#second-menu-gallery-content").removeClass("d-none");
-      $("#awards-menu").removeClass("active");
-    }
-    if(!$( "#second-menu-gallery" ).hasClass( "d-none" )){
-      $("#second-menu-gallery").addClass("d-none");
-      $("#gallery-menu").removeClass("active");
-    }
+  var x = document.getElementById("second-menu-awards");
+  if ($("#second-menu-awards").hasClass("d-none")) {
+    $("#second-menu-awards").removeClass("d-none");
+    $("#second-menu-about").addClass("d-none");
+    $("#second-menu-gallery-content").addClass("d-none");
+    $("#awards-menu").addClass("active");
+  } else {
+    $("#second-menu-awards").addClass("d-none");
+    $("#second-menu-about").removeClass("d-none");
+    $("#second-menu-gallery-content").removeClass("d-none");
+    $("#awards-menu").removeClass("active");
+  }
+  if (!$("#second-menu-gallery").hasClass("d-none")) {
+    $("#second-menu-gallery").addClass("d-none");
+    $("#gallery-menu").removeClass("active");
+  }
 }
 
 // ----------- Header ----------------
 $(document).ready(function () {
-  $('#navbar-toggler-menu').click(function(event) {
+  $("#navbar-toggler-menu").click(function (event) {
     // $('.navbar-demo').toggleClass('open-nav');
-    $('.navbar-demo').addClass('open-nav');
-    $('#navbar-toggler-menu').addClass('d-none');
-    $('#header').removeClass('d-none-custom');
-    $('#navbar-toggler-times').removeClass('d-none');
+    $(".navbar-demo").addClass("open-nav");
+    $("#navbar-toggler-menu").addClass("d-none");
+    $("#header").removeClass("d-none-custom");
+    $("#navbar-toggler-times").removeClass("d-none");
   });
 
-  $('#navbar-toggler-times').click(function(event) {
+  $("#navbar-toggler-times").click(function (event) {
     // $('.navbar-demo').toggleClass('open-nav');
-    $('.navbar-demo').removeClass('open-nav');
-    $('#navbar-toggler-menu').removeClass('d-none');
-    $('#navbar-toggler-times').addClass('d-none');
-    $('#header').addClass('d-none-custom');
+    $(".navbar-demo").removeClass("open-nav");
+    $("#navbar-toggler-menu").removeClass("d-none");
+    $("#navbar-toggler-times").addClass("d-none");
+    $("#header").addClass("d-none-custom");
   });
-
-
 });
-
-
-
-
-
-
-
 
 function SplitText(node) {
   var text = node.nodeValue.replace(/^\s*|\s(?=\s)|\s*$/g, "");
@@ -174,12 +163,29 @@ function Justify() {
   while (elem) {
     var nextElem = elem.nextSibling;
 
-    if (elem.nodeType == TEXT_NODE)
-      SplitText(elem);
-      SplitText2(elem2);
-      SplitText3(elem3);
-      SplitText4(elem4);
+    if (elem.nodeType == TEXT_NODE) SplitText(elem);
+    SplitText2(elem2);
+    SplitText3(elem3);
+    SplitText4(elem4);
 
     elem = nextElem;
   }
 }
+
+
+
+// ---------------- gallery Mobile----------------
+
+// $(document).ready(function () {
+//   var width = $(window).width();
+//   console.log(width);
+// });
+
+window.addEventListener("resize", () => {
+    var width = $(window).width();
+if (width<=769) {
+  $(".swiper-slide").removeClass("height");
+} else {
+  $(".swiper-slide").addClass("height");
+}
+});
