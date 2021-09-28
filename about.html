@@ -34,7 +34,7 @@
           /></a>
           <button id="navbar-toggler-menu" class="navbar-toggler" type="button">
             <!-- <span class="navbar-toggler-icon"></span> -->
-            <img src="Image/icon/menu.svg" alt="">
+            <img src="Image/icon/menu.svg" alt="" />
           </button>
 
           <button
@@ -42,7 +42,7 @@
             class="navbar-toggler d-none"
             type="button"
           >
-          <img src="Image/icon/close.svg" alt="">
+            <img src="Image/icon/close.svg" alt="" />
           </button>
         </nav>
         <div class="row ml-0 mr-0 mt-0 mb-4">
@@ -54,21 +54,38 @@
         </div>
       </div>
 
-      <header
-        id="header"
-        class="navbar-demo d-none-custom"
-        
-      >
+      <header id="header" class="navbar-demo d-none-custom">
         <div class="nav-bar">
           <nav class="nav flex-column menu-nav">
             <a class="nav-link active" href="index.html">Home</a>
             <a class="nav-link" href="about.html">About</a>
-            <a id="gallery-menu" class="nav-link" onclick="myGallery()" href="#"
+
+            <a id="gallery-menu" class="nav-link" onclick="myGalleryMob()" href="#"
               >gallery</a
             >
-            <a id="awards-menu" class="nav-link" onclick="myAwards()" href="#"
+            <div id="sub-gallery" class="sub-gallery d-none">
+              <ul>
+                <li><a href="gallery-2-6.html">● Lake villa by Carlson</a></li>
+                <li><a href="gallery-5-7-12.html">● Urban compact living</a></li>
+                <li><a href="gallery-vasthu-convertor.html">● “Vasthu” converter</a></li>
+                <li><a href="gallery-10.html">● Urban remake</a></li>
+                <li><a href="gallery-8.html">● Small Dutch house</a></li>
+                <li><a href="gallery-3-4.html">● Bigger the faster</a></li>
+                <li><a href="#">● “Lavinia mews” guesthouse</a></li>
+                <li><a href="gallery-1-9.html">● Less is strong</a></li>
+                <li><a href="gallery-random.html">● Random clicks</a></li>
+                <li><a href="gallery-adaptable.html">● Adaptable studio apartmen</a></li>
+              </ul>
+            </div>
+            <a id="awards-menu" class="nav-link" onclick="myAwardsMob()" href="#"
               >Awards</a
             >
+            <div id="sub-awards" class="sub-awards d-none">
+            <ul>
+              <li><a href="#">● SLIA design completion award 2018</a></li>
+              <li><a href="#">● SLIA design completion award 2015</a></li>
+            </ul>
+          </div>
             <a class="nav-link" href="contact.html">contact</a>
           </nav>
         </div>
