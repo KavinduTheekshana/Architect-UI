@@ -39,12 +39,48 @@ body {
   border: 1px solid #fff;
 }
 
+.name-top {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #000;
+  margin-top: 10px;
+  font-size: 11px;
+  text-align: justify;
+  text-transform: uppercase;
+  text-justify: inter-word;
+}
+
+.navbar-toggler-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+#navbar-toggler-times {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.navbar-expand-lg {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-top: 20px !important;
+}
+
+.navbar-expand-lg .navbar-brand {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 .navbar-expand-lg .navbar-brand img {
   width: 70px;
-  margin-left: 20px;
 }
 
 .navbar-expand-lg .navbar-toggler {
+  padding: 0 !important;
   border-color: transparent;
   color: #000;
 }
@@ -58,6 +94,9 @@ body {
 }
 
 @media only screen and (max-width: 769px) {
+  #character_justify {
+    display: none !important;
+  }
   .navbar-demo button.menu-btn {
     position: absolute;
     top: 0;
@@ -73,6 +112,9 @@ body {
   .navbar-demo {
     height: 100%;
     z-index: 999;
+    position: absolute !important;
+    top: 0 !important;
+    width: 250px !important;
   }
   .navbar-demo .nav-bar {
     left: -950px;
@@ -129,17 +171,6 @@ body {
   right: 0;
   height: 100%;
   opacity: 0.3;
-}
-
-.hero-image {
-  background-size: cover;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: lightgray;
-  background-image: url("https://images.unsplash.com/photo-1495465798138-718f86d1a4bc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
-  display: table;
-  background-position: center;
 }
 
 .hero-image .about-me a {
@@ -212,11 +243,14 @@ body {
 }
 
 @media only screen and (max-width: 769px) {
+  .main-wrapper {
+    min-height: calc(100vh - 130px) !important;
+  }
   .main-wrapper .content .menu {
-    height: 410px !important;
+    height: 420px !important;
   }
   .main-wrapper .gallery {
-    height: 410px !important;
+    height: 420px !important;
   }
   .main-wrapper .bottum-name p {
     font-size: 12px !important;
@@ -234,6 +268,7 @@ body {
   }
   .mob-header {
     display: block;
+    margin-top: 90px;
   }
   .side-menu {
     display: none;
@@ -244,13 +279,16 @@ body {
         -ms-flex: 0 0 100% !important;
             flex: 0 0 100% !important;
   }
+  .name-top {
+    font-size: 17px !important;
+  }
   .main-wrapper {
-    min-height: auto !important;
+    min-height: calc(100vh - 130px) !important;
   }
   .main-wrapper .name {
     font-size: 17px !important;
     margin-right: 0px !important;
-    margin-top: 50px !important;
+    margin-top: -30px !important;
   }
   .main-wrapper .gallery {
     height: 450px !important;
@@ -262,6 +300,9 @@ body {
 }
 
 @media only screen and (max-width: 541px) {
+  .name-top {
+    font-size: 13px !important;
+  }
   .main-wrapper .name {
     font-size: 13px !important;
     margin-right: 0px !important;
@@ -277,11 +318,14 @@ body {
 }
 
 @media only screen and (max-width: 420px) {
+  .name-top {
+    font-size: 10px !important;
+  }
   .main-wrapper .name {
     font-size: 10px !important;
   }
   .main-wrapper .gallery {
-    height: 250px !important;
+    height: 260px !important;
   }
   .main-wrapper .bottum-name p {
     font-size: 10px !important;
@@ -290,6 +334,9 @@ body {
 }
 
 @media only screen and (max-width: 376px) {
+  .name-top {
+    font-size: 10px !important;
+  }
   .main-wrapper .name {
     font-size: 10px !important;
   }
@@ -303,6 +350,9 @@ body {
 }
 
 @media only screen and (max-width: 321px) {
+  .name-top {
+    font-size: 8px !important;
+  }
   .main-wrapper .name {
     font-size: 8px !important;
   }
@@ -394,6 +444,7 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   font-family: "Open Sans", sans-serif;
+  font-style: italic;
   font-weight: 600;
   color: #e0cf3b;
   text-transform: uppercase;
@@ -792,7 +843,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -801,5 +852,11 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.d-none-custom {
+  -webkit-transition: 0.9s ease-in-out;
+  transition: 0.9s ease-in-out;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
