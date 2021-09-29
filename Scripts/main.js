@@ -194,8 +194,19 @@ function Justify() {
 
 // ---------------- gallery Mobile----------------
 
+// var total=0; 
+// $(window).load(function() {
+//   $('.thumb').each(function() {
+//     total += $(this).width();
+//   });
+// });
+// console.log(screen.width);
+
+// console.log(window.innerWidth);
 $(document).ready(function () {
   var width = $(window).width();
+  // var width = $(document).width();
+  // var width = screen.width;
   console.log(width);
   if (width<=769) {
     $(".swiper-slide").removeClass("height");

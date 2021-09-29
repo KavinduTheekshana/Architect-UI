@@ -855,10 +855,35 @@ body {
   text-align: justify;
 }
 
-.main-wrapper .row .center .content .gray-bg .color .about .team img {
-  margin-top: 5px;
-  width: 100%;
-  cursor: pointer;
+.main-wrapper .row .center .content .gray-bg .color .about .team .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image img {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 10px;
+  line-height: 0;
+  margin-top: 10px;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image .tal {
+  text-align: left;
+}
+
+.main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image .tar {
+  text-align: right;
 }
 
 .main-wrapper .row .center .content .gray-bg .color .contact {
