@@ -19,6 +19,28 @@ body {
   font-size: 25px !important;
 }
 
+
+.temp-ul{
+  li{
+    display: list-item;
+    margin-left: 29px;
+    &::marker{
+      color: #e0cf3b;
+      font-size: 0.8em;
+    }
+    &:hover{
+      &::marker{
+        color: #d9d9d9 !important;
+
+      }
+    }
+
+  }
+}
+
+
+
+
 #character_justify {
   position: relative;
   width: 100%;
@@ -110,9 +132,20 @@ body {
     ul{
       display: block;
       li{
+        display: list-item;
+        &::marker{
+          color: #e0cf3b;
+          font-size: 0.8em;
+        }
+        &:hover{
+          &::marker{
+            color: #d9d9d9 !important;
+    
+          }
+        }
         a{
           text-align: left;
-          line-height: 20px;
+          line-height: 24px;
           font-size: 9px;
           padding: 0;
           float: left;
@@ -286,6 +319,26 @@ body {
 }
 
 // ---------------------- media public --------------
+
+@media only screen and (max-width: 1025px) {
+  .main-wrapper {
+    min-height: calc(100vh - 180px) !important;
+    .content {
+      .menu {
+        height: 410px !important;
+      }
+    }
+    .gallery {
+      height: 410px !important;
+    }
+   
+  }
+  .main-wrapper .row .center .content .gray-bg .color .mySwiper .height{
+    height: 410px !important;
+  }
+}
+
+
 @media only screen and (max-width: 769px) {
   .main-wrapper {
     min-height: calc(100vh - 180px) !important;
@@ -466,7 +519,9 @@ body {
             background-color: #888888;
             .menu-nav {
               .nav-link {
-                padding-left: 10px;
+                padding-left: 10px !important;
+
+                // margin-left: -10px;
               }
               a {
                 font-size: 12px;
@@ -503,7 +558,7 @@ body {
                 }
               }
               p {
-                padding: 10px;
+                padding: 0 10px 10px 10px;
                 font-family: "Josefin Sans", sans-serif;
                 color: white;
                 font-style: italic;
@@ -511,7 +566,9 @@ body {
                 text-transform: capitalize;
               }
               .nav-link {
-                padding-left: 10px;
+                padding-left: 0px;
+                padding-right: 5px;
+                margin-left: -6px;
               }
             }
           }

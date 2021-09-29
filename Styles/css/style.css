@@ -22,6 +22,20 @@ body {
   font-size: 25px !important;
 }
 
+.temp-ul li {
+  display: list-item;
+  margin-left: 29px;
+}
+
+.temp-ul li::marker {
+  color: #e0cf3b;
+  font-size: 0.8em;
+}
+
+.temp-ul li:hover::marker {
+  color: #d9d9d9 !important;
+}
+
 #character_justify {
   position: relative;
   width: 100%;
@@ -118,9 +132,22 @@ body {
   display: block;
 }
 
+#header .sub-gallery ul li, #header .sub-awards ul li {
+  display: list-item;
+}
+
+#header .sub-gallery ul li::marker, #header .sub-awards ul li::marker {
+  color: #e0cf3b;
+  font-size: 0.8em;
+}
+
+#header .sub-gallery ul li:hover::marker, #header .sub-awards ul li:hover::marker {
+  color: #d9d9d9 !important;
+}
+
 #header .sub-gallery ul li a, #header .sub-awards ul li a {
   text-align: left;
-  line-height: 20px;
+  line-height: 24px;
   font-size: 9px;
   padding: 0;
   float: left;
@@ -307,6 +334,21 @@ body {
   display: none;
 }
 
+@media only screen and (max-width: 1025px) {
+  .main-wrapper {
+    min-height: calc(100vh - 180px) !important;
+  }
+  .main-wrapper .content .menu {
+    height: 410px !important;
+  }
+  .main-wrapper .gallery {
+    height: 410px !important;
+  }
+  .main-wrapper .row .center .content .gray-bg .color .mySwiper .height {
+    height: 410px !important;
+  }
+}
+
 @media only screen and (max-width: 769px) {
   .main-wrapper {
     min-height: calc(100vh - 180px) !important;
@@ -482,7 +524,7 @@ body {
 }
 
 .main-wrapper .row .center .content .menu .top .menu-nav .nav-link {
-  padding-left: 10px;
+  padding-left: 10px !important;
 }
 
 .main-wrapper .row .center .content .menu .top .menu-nav a {
@@ -522,7 +564,7 @@ body {
 }
 
 .main-wrapper .row .center .content .menu .middle .second-menu-nav p {
-  padding: 10px;
+  padding: 0 10px 10px 10px;
   font-family: "Josefin Sans", sans-serif;
   color: white;
   font-style: italic;
@@ -531,7 +573,9 @@ body {
 }
 
 .main-wrapper .row .center .content .menu .middle .second-menu-nav .nav-link {
-  padding-left: 10px;
+  padding-left: 0px;
+  padding-right: 5px;
+  margin-left: -6px;
 }
 
 .main-wrapper .row .center .content .menu .full-height {

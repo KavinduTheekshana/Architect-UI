@@ -196,7 +196,7 @@ function Justify() {
 
 $(document).ready(function () {
   var width = $(window).width();
-  // console.log(width);
+  console.log(width);
   if (width<=769) {
     $(".swiper-slide").removeClass("height");
   } else {
