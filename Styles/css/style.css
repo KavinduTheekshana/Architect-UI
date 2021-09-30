@@ -344,6 +344,12 @@ body {
   display: none;
 }
 
+@media only screen and (width: 1024px) {
+  .main-wrapper .row .center .content .gray-bg .color .mySwiper .height {
+    height: 410px !important;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .main-wrapper {
     min-height: calc(100vh - 180px) !important;
@@ -353,9 +359,6 @@ body {
   }
   .main-wrapper .gallery {
     height: 410px !important;
-  }
-  .main-wrapper .row .center .content .gray-bg .color .mySwiper .height {
-    height: 410px;
   }
 }
 
