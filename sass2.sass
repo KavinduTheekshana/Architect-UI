@@ -13,7 +13,7 @@ body {
 }
 .active {
   color: #d9d9d9 !important;
-  &::marker {
+  &::marker{
     color: #d9d9d9 !important;
   }
 }
@@ -22,21 +22,27 @@ body {
   font-size: 25px !important;
 }
 
-.temp-ul {
-  li {
+
+.temp-ul{
+  li{
     display: list-item;
     margin-left: 29px;
-    &::marker {
+    &::marker{
       color: #e0cf3b;
       font-size: 0.8em;
     }
-    &:hover {
-      &::marker {
+    &:hover{
+      &::marker{
         color: #d9d9d9 !important;
+
       }
     }
+
   }
 }
+
+
+
 
 #character_justify {
   position: relative;
@@ -116,61 +122,66 @@ body {
 .mob-header {
   display: none;
 }
-#header {
-  .nav-bar {
-    .nav-link {
+#header{
+  .nav-bar{
+    .nav-link{
       text-align: initial;
     }
   }
-  .nav-link {
+  .nav-link{
     padding: 10px 0 0 0 !important;
   }
-  .sub-gallery,
-  .sub-awards {
-    ul {
+  .sub-gallery,.sub-awards{
+    ul{
       display: block;
-      li {
+      li{
         display: list-item;
-        &::marker {
+        &::marker{
           color: #e0cf3b;
           font-size: 0.8em;
         }
-        &:hover {
-          &::marker {
+        &:hover{
+          &::marker{
             color: #d9d9d9 !important;
+    
           }
         }
-        a {
+        a{
           text-align: left;
           line-height: 24px;
           font-size: 9px;
           padding: 0;
           float: left;
           font-family: "Open Sans", sans-serif;
-          font-style: italic;
-          color: #e0cf3b;
-          text-transform: uppercase;
-          &:hover {
-            color: #d9d9d9 !important;
-          }
+                font-style: italic;
+                color: #e0cf3b;
+                text-transform: uppercase;
+                &:hover {
+                  color: #d9d9d9 !important;
+                }
         }
       }
     }
   }
 }
 @media only screen and (max-width: 769px) {
-  .about-mob{
-display: block !important;
+  .gray-bg{
+    .color{
+      background-color: #fff !important;
+    }
   }
-  .about-pc{
+  .team-mob{
+    display: block !important;
+  }
+  .team-pc{
     display: none !important;
   }
-  // .team-mob {
-  //   display: block !important;
-  // }
-  // .team-pc {
-  //   display: none !important;
-  // }
+  .swiper-slide{
+    height: 100% !important;
+    img{
+      width: 100%;
+    }
+  }
   .about {
     .align-items-cente {
       padding: 20px 0;
@@ -190,7 +201,7 @@ display: block !important;
         padding-bottom: 20px;
         .social-icon {
           justify-content: start;
-          margin-left: -20px;
+          margin-left: -30px;
         }
       }
     }
@@ -329,18 +340,8 @@ display: block !important;
 
 // ---------------------- media public --------------
 @media only screen and (width: 1024px) {
-  .main-wrapper .row .center .content .gray-bg .color .mySwiper .height {
+   .main-wrapper .row .center .content .gray-bg .color .mySwiper .height{
     height: 410px !important;
-  }
-  .main-wrapper .row .center .content .gray-bg{
-    height: 410px !important;
-  }
-  .main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image img{
-width: 70px !important;
-height: 70px !important;
-  }
-  .main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image p{
-    font-size: 9px !important;
   }
 }
 
@@ -355,28 +356,15 @@ height: 70px !important;
     .gallery {
       height: 410px !important;
     }
+   
   }
   // .main-wrapper .row .center .content .gray-bg .color .mySwiper .height{
   //   height: 410px !important;
   // }
 }
 
+
 @media only screen and (max-width: 769px) {
-  .about-mob h6{
-    font-size: 15px !important;
-  }
-  .about-mob p{
-    font-size: 15px !important;
-  }
-  .main-wrapper .row .center .bottum-name{
-    margin-bottom: 20px !important;
-  }
-  .contact-wrapper{
-    display: block !important;
-  }
-  .contact-details{
-    padding-bottom: 60px !important;  
-  }
   .main-wrapper {
     min-height: calc(100vh - 180px) !important;
     .content {
@@ -397,20 +385,11 @@ height: 70px !important;
 }
 
 @media only screen and (max-width: 769px) {
-  .contact-gray{
-    height: 100% !important;
-  }
   .gray-bg {
-    height: 450px !important;
-    padding: 0 !important;
-    .mySwiper {
-      height: 450px !important;
-      .swiper-slide {
-        height: 100% !important;
-        img {
-          height: 100% !important;
-        }
-      }
+    width: auto;
+    .color {
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
   }
   .mob-header {
@@ -446,25 +425,6 @@ height: 70px !important;
   }
 }
 @media only screen and (max-width: 541px) {
-  .about-mob h6{
-    font-size: 10px !important;
-  }
-  .about-mob p{
-    font-size: 10px !important;
-  }
-  .gray-bg {
-    height: 340px !important;
-    padding: 0 !important;
-    .mySwiper {
-      height: 340px !important;
-      .swiper-slide {
-        height: 100% !important;
-        img {
-          height: 100% !important;
-        }
-      }
-    }
-  }
   .name-top {
     font-size: 13px !important;
   }
@@ -487,19 +447,6 @@ height: 70px !important;
   }
 }
 @media only screen and (max-width: 420px) {
-  .gray-bg {
-    height: 260px !important;
-    padding: 0 !important;
-    .mySwiper {
-      height: 260px !important;
-      .swiper-slide {
-        height: 100% !important;
-        img {
-          height: 100% !important;
-        }
-      }
-    }
-  }
   .name-top {
     font-size: 10px !important;
   }
@@ -520,31 +467,13 @@ height: 70px !important;
   }
 }
 @media only screen and (max-width: 376px) {
-  .contact-gray{
-    height: 100% !important;
-  }
-
-
-  .gray-bg {
-    height: 250px !important;
-    padding: 0 !important;
-    .mySwiper {
-      height: 250px !important;
-      .swiper-slide {
-        height: 100% !important;
-        img {
-          height: 100% !important;
-        }
-      }
-    }
-  }
-  .team-mob {
-    .single-image {
-      img {
+  .team-mob{
+    .single-image{
+      img{
         width: 80px !important;
         height: 80px !important;
       }
-      p {
+      p{
         font-size: 8px !important;
       }
     }
@@ -568,19 +497,6 @@ height: 70px !important;
   }
 }
 @media only screen and (max-width: 321px) {
-  .gray-bg {
-    height: 210px !important;
-    padding: 0 !important;
-    .mySwiper {
-      height: 210px !important;
-      .swiper-slide {
-        height: 100% !important;
-        img {
-          height: 100% !important;
-        }
-      }
-    }
-  }
   .name-top {
     font-size: 8px !important;
   }
@@ -859,20 +775,17 @@ height: 70px !important;
         }
         .gray-bg {
           width: 100%;
-          // height: 100%;
-          height: 500px;
+          height: 100%;
           padding: 3px 0 3px 0;
           .color {
             background-color: #c7c7c7;
             width: 100%;
             height: 100%;
             .mySwiper {
-              height: 100%;
               .swiper-slide {
                 justify-content: center;
                 display: flex;
-               
-                // margin: auto;
+                margin: auto;
                 img {
                   // width: 100%;
                   height: 100%;
@@ -880,9 +793,9 @@ height: 70px !important;
                   overflow: hidden;
                 }
               }
-              // .height{
-              //   height: 494px;
-              // }
+              .height{
+                height: 494px;
+              }
               .swiper-button-next,
               .swiper-button-prev {
                 color: #ffffff78;
@@ -912,35 +825,35 @@ height: 70px !important;
                 text-align: justify;
               }
               .team {
-                .ml4 {
+                .ml4{
                   margin-left: -4px !important;
                 }
-                .row {
+                .row{
                   justify-content: space-between;
-                  .single-image {
-                    img {
+                  .single-image{
+                    img{
                       width: 90px;
                       height: 90px;
                       overflow: hidden;
                     }
-                    p {
+                    p{
                       font-family: "Open Sans", sans-serif;
                       font-weight: 500;
                       text-transform: capitalize;
                       font-size: 10px;
                       line-height: 0;
                       margin-top: 10px;
-
+                      
                       font-style: italic;
                       margin-bottom: 0;
                     }
-                    .tal {
+                    .tal{
                       text-align: left;
                     }
-                    .tar {
+                    .tar{
                       text-align: right;
                     }
-                    .tac {
+                    .tac{
                       text-align: center;
                     }
                   }
@@ -1086,43 +999,4 @@ height: 70px !important;
   width: 50%;
   height: 100%;
   background-color: black;
-}
-
-.about-mob{
-  h6{
-    font-family: "Open Sans", sans-serif;
-    font-weight: 800;
-    font-size: 10px;
-    margin: auto;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  p{
-    font-family: "Open Sans", sans-serif;
-    font-style: italic;
-    font-weight: 500;
-    font-size: 10px;
-    text-align: justify;
-  }
-  .team{
-    .image-details{
-      display: flex;
-      img{
-        width: 50%;
-      }
-      .details{
-        width: 50%;
-        margin-top: auto;
-        margin-bottom: auto;
-        p{
-          text-transform: capitalize;
-          margin-bottom: 0;
-          font-size: 12px;
-        }
-      }
-      .tlr{
-        text-align: right;
-      }
-    }
-  }
 }

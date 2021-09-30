@@ -132,24 +132,29 @@ body {
   padding: 10px 0 0 0 !important;
 }
 
-#header .sub-gallery ul, #header .sub-awards ul {
+#header .sub-gallery ul,
+#header .sub-awards ul {
   display: block;
 }
 
-#header .sub-gallery ul li, #header .sub-awards ul li {
+#header .sub-gallery ul li,
+#header .sub-awards ul li {
   display: list-item;
 }
 
-#header .sub-gallery ul li::marker, #header .sub-awards ul li::marker {
+#header .sub-gallery ul li::marker,
+#header .sub-awards ul li::marker {
   color: #e0cf3b;
   font-size: 0.8em;
 }
 
-#header .sub-gallery ul li:hover::marker, #header .sub-awards ul li:hover::marker {
+#header .sub-gallery ul li:hover::marker,
+#header .sub-awards ul li:hover::marker {
   color: #d9d9d9 !important;
 }
 
-#header .sub-gallery ul li a, #header .sub-awards ul li a {
+#header .sub-gallery ul li a,
+#header .sub-awards ul li a {
   text-align: left;
   line-height: 24px;
   font-size: 9px;
@@ -161,25 +166,17 @@ body {
   text-transform: uppercase;
 }
 
-#header .sub-gallery ul li a:hover, #header .sub-awards ul li a:hover {
+#header .sub-gallery ul li a:hover,
+#header .sub-awards ul li a:hover {
   color: #d9d9d9 !important;
 }
 
 @media only screen and (max-width: 769px) {
-  .gray-bg .color {
-    background-color: #fff !important;
-  }
-  .team-mob {
+  .about-mob {
     display: block !important;
   }
-  .team-pc {
+  .about-pc {
     display: none !important;
-  }
-  .swiper-slide {
-    height: 100% !important;
-  }
-  .swiper-slide img {
-    width: 100%;
   }
   .about .align-items-cente {
     padding: 20px 0;
@@ -203,7 +200,7 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    margin-left: -30px;
+    margin-left: -20px;
   }
   #character_justify {
     display: none !important;
@@ -357,6 +354,16 @@ body {
   .main-wrapper .row .center .content .gray-bg .color .mySwiper .height {
     height: 410px !important;
   }
+  .main-wrapper .row .center .content .gray-bg {
+    height: 410px !important;
+  }
+  .main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image p {
+    font-size: 9px !important;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -372,6 +379,21 @@ body {
 }
 
 @media only screen and (max-width: 769px) {
+  .about-mob h6 {
+    font-size: 15px !important;
+  }
+  .about-mob p {
+    font-size: 15px !important;
+  }
+  .main-wrapper .row .center .bottum-name {
+    margin-bottom: 20px !important;
+  }
+  .contact-wrapper {
+    display: block !important;
+  }
+  .contact-details {
+    padding-bottom: 60px !important;
+  }
   .main-wrapper {
     min-height: calc(100vh - 180px) !important;
   }
@@ -388,12 +410,21 @@ body {
 }
 
 @media only screen and (max-width: 769px) {
-  .gray-bg {
-    width: auto;
+  .contact-gray {
+    height: 100% !important;
   }
-  .gray-bg .color {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  .gray-bg {
+    height: 450px !important;
+    padding: 0 !important;
+  }
+  .gray-bg .mySwiper {
+    height: 450px !important;
+  }
+  .gray-bg .mySwiper .swiper-slide {
+    height: 100% !important;
+  }
+  .gray-bg .mySwiper .swiper-slide img {
+    height: 100% !important;
   }
   .mob-header {
     display: block;
@@ -429,6 +460,25 @@ body {
 }
 
 @media only screen and (max-width: 541px) {
+  .about-mob h6 {
+    font-size: 10px !important;
+  }
+  .about-mob p {
+    font-size: 10px !important;
+  }
+  .gray-bg {
+    height: 340px !important;
+    padding: 0 !important;
+  }
+  .gray-bg .mySwiper {
+    height: 340px !important;
+  }
+  .gray-bg .mySwiper .swiper-slide {
+    height: 100% !important;
+  }
+  .gray-bg .mySwiper .swiper-slide img {
+    height: 100% !important;
+  }
   .name-top {
     font-size: 13px !important;
   }
@@ -448,6 +498,19 @@ body {
 }
 
 @media only screen and (max-width: 420px) {
+  .gray-bg {
+    height: 260px !important;
+    padding: 0 !important;
+  }
+  .gray-bg .mySwiper {
+    height: 260px !important;
+  }
+  .gray-bg .mySwiper .swiper-slide {
+    height: 100% !important;
+  }
+  .gray-bg .mySwiper .swiper-slide img {
+    height: 100% !important;
+  }
   .name-top {
     font-size: 10px !important;
   }
@@ -465,6 +528,22 @@ body {
 }
 
 @media only screen and (max-width: 376px) {
+  .contact-gray {
+    height: 100% !important;
+  }
+  .gray-bg {
+    height: 250px !important;
+    padding: 0 !important;
+  }
+  .gray-bg .mySwiper {
+    height: 250px !important;
+  }
+  .gray-bg .mySwiper .swiper-slide {
+    height: 100% !important;
+  }
+  .gray-bg .mySwiper .swiper-slide img {
+    height: 100% !important;
+  }
   .team-mob .single-image img {
     width: 80px !important;
     height: 80px !important;
@@ -488,6 +567,19 @@ body {
 }
 
 @media only screen and (max-width: 321px) {
+  .gray-bg {
+    height: 210px !important;
+    padding: 0 !important;
+  }
+  .gray-bg .mySwiper {
+    height: 210px !important;
+  }
+  .gray-bg .mySwiper .swiper-slide {
+    height: 100% !important;
+  }
+  .gray-bg .mySwiper .swiper-slide img {
+    height: 100% !important;
+  }
   .name-top {
     font-size: 8px !important;
   }
@@ -814,13 +906,17 @@ body {
 
 .main-wrapper .row .center .content .gray-bg {
   width: 100%;
-  height: 100%;
+  height: 500px;
   padding: 3px 0 3px 0;
 }
 
 .main-wrapper .row .center .content .gray-bg .color {
   background-color: #c7c7c7;
   width: 100%;
+  height: 100%;
+}
+
+.main-wrapper .row .center .content .gray-bg .color .mySwiper {
   height: 100%;
 }
 
@@ -831,7 +927,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
 }
 
 .main-wrapper .row .center .content .gray-bg .color .mySwiper .swiper-slide img {
@@ -839,10 +934,6 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
-}
-
-.main-wrapper .row .center .content .gray-bg .color .mySwiper .height {
-  height: 494px;
 }
 
 .main-wrapper .row .center .content .gray-bg .color .mySwiper .swiper-button-next,
@@ -1082,5 +1173,48 @@ body {
   width: 50%;
   height: 100%;
   background-color: black;
+}
+
+.about-mob h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-mob p {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 10px;
+  text-align: justify;
+}
+
+.about-mob .team .image-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-mob .team .image-details img {
+  width: 50%;
+}
+
+.about-mob .team .image-details .details {
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.about-mob .team .image-details .details p {
+  text-transform: capitalize;
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.about-mob .team .image-details .tlr {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
