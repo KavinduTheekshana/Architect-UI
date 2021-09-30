@@ -166,6 +166,9 @@ body {
 }
 
 @media only screen and (max-width: 769px) {
+  .gray-bg .color {
+    background-color: #fff !important;
+  }
   .team-mob {
     display: block !important;
   }
