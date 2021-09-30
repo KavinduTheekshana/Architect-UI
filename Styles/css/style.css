@@ -171,7 +171,7 @@ body {
   color: #d9d9d9 !important;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 1000px) {
   .about-mob {
     display: block !important;
   }
@@ -357,11 +357,31 @@ body {
   .main-wrapper .row .center .content .gray-bg {
     height: 410px !important;
   }
-  .main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image img {
+  .main-wrapper
+.row
+.center
+.content
+.gray-bg
+.color
+.about
+.team
+.row
+.single-image
+img {
     width: 70px !important;
     height: 70px !important;
   }
-  .main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image p {
+  .main-wrapper
+.row
+.center
+.content
+.gray-bg
+.color
+.about
+.team
+.row
+.single-image
+p {
     font-size: 9px !important;
   }
 }
@@ -375,6 +395,83 @@ body {
   }
   .main-wrapper .gallery {
     height: 410px !important;
+  }
+  .main-wrapper
+.row
+.center
+.content
+.gray-bg
+.color
+.about
+.team
+.row
+.single-image
+img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .main-wrapper
+.row
+.center
+.content
+.gray-bg
+.color
+.about
+.team
+.row
+.single-image
+p {
+    font-size: 9px !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-gray {
+    height: 100% !important;
+  }
+  .gray-bg {
+    height: 450px !important;
+    padding: 0 !important;
+  }
+  .gray-bg .mySwiper {
+    height: 450px !important;
+  }
+  .gray-bg .mySwiper .swiper-slide {
+    height: 100% !important;
+  }
+  .gray-bg .mySwiper .swiper-slide img {
+    height: 100% !important;
+  }
+  .mob-header {
+    display: block;
+    margin-top: 90px;
+  }
+  .side-menu {
+    display: none;
+  }
+  .gallery-content-full {
+    max-width: 100% !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+            flex: 0 0 100% !important;
+  }
+  .name-top {
+    font-size: 17px !important;
+  }
+  .main-wrapper {
+    min-height: calc(100vh - 180px) !important;
+  }
+  .main-wrapper .name {
+    font-size: 17px !important;
+    margin-right: 0px !important;
+    margin-top: -30px !important;
+  }
+  .main-wrapper .gallery {
+    height: 450px !important;
+  }
+  .main-wrapper .bottum-name p {
+    font-size: 14px !important;
+    margin-right: 0px !important;
   }
 }
 

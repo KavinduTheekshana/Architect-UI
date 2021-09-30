@@ -158,19 +158,13 @@ body {
     }
   }
 }
-@media only screen and (max-width: 769px) {
-  .about-mob{
-display: block !important;
+@media only screen and (max-width: 1000px) {
+  .about-mob {
+    display: block !important;
   }
-  .about-pc{
+  .about-pc {
     display: none !important;
   }
-  // .team-mob {
-  //   display: block !important;
-  // }
-  // .team-pc {
-  //   display: none !important;
-  // }
   .about {
     .align-items-cente {
       padding: 20px 0;
@@ -328,22 +322,39 @@ display: block !important;
 }
 
 // ---------------------- media public --------------
-@media only screen and (max-width: 1024px) {
-
-}
 
 @media only screen and (width: 1024px) {
   .main-wrapper .row .center .content .gray-bg .color .mySwiper .height {
     height: 410px !important;
   }
-  .main-wrapper .row .center .content .gray-bg{
+  .main-wrapper .row .center .content .gray-bg {
     height: 410px !important;
   }
-  .main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image img{
-width: 70px !important;
-height: 70px !important;
+  .main-wrapper
+    .row
+    .center
+    .content
+    .gray-bg
+    .color
+    .about
+    .team
+    .row
+    .single-image
+    img {
+    width: 70px !important;
+    height: 70px !important;
   }
-  .main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image p{
+  .main-wrapper
+    .row
+    .center
+    .content
+    .gray-bg
+    .color
+    .about
+    .team
+    .row
+    .single-image
+    p {
     font-size: 9px !important;
   }
 }
@@ -360,26 +371,135 @@ height: 70px !important;
       height: 410px !important;
     }
   }
-  // .main-wrapper .row .center .content .gray-bg .color .mySwiper .height{
-  //   height: 410px !important;
-  // }
+  .main-wrapper
+    .row
+    .center
+    .content
+    .gray-bg
+    .color
+    .about
+    .team
+    .row
+    .single-image
+    img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .main-wrapper
+    .row
+    .center
+    .content
+    .gray-bg
+    .color
+    .about
+    .team
+    .row
+    .single-image
+    p {
+    font-size: 9px !important;
+  }
+}
+
+// @media only screen and (max-width: 1024px) {
+//   .about-mob h6{
+//     font-size: 15px !important;
+//   }
+//   .about-mob p{
+//     font-size: 15px !important;
+//   }
+//   .main-wrapper .row .center .bottum-name{
+//     margin-bottom: 20px !important;
+//   }
+//   .contact-wrapper{
+//     display: block !important;
+//   }
+//   .contact-details{
+//     padding-bottom: 60px !important;
+//   }
+//   .main-wrapper {
+//     min-height: calc(100vh - 180px) !important;
+//     .content {
+//       .menu {
+//         height: 420px !important;
+//       }
+//     }
+//     .gallery {
+//       height: 420px !important;
+//     }
+//     .bottum-name {
+//       p {
+//         font-size: 12px !important;
+//         margin-right: 0px !important;
+//       }
+//     }
+//   }
+// }
+
+@media only screen and (max-width: 1000px) {
+  .contact-gray {
+    height: 100% !important;
+  }
+  .gray-bg {
+    height: 450px !important;
+    padding: 0 !important;
+    .mySwiper {
+      height: 450px !important;
+      .swiper-slide {
+        height: 100% !important;
+        img {
+          height: 100% !important;
+        }
+      }
+    }
+  }
+  .mob-header {
+    display: block;
+    margin-top: 90px;
+  }
+  .side-menu {
+    display: none;
+  }
+  .gallery-content-full {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  .name-top {
+    font-size: 17px !important;
+  }
+  .main-wrapper {
+    min-height: calc(100vh - 180px) !important;
+    .name {
+      font-size: 17px !important;
+      margin-right: 0px !important;
+      margin-top: -30px !important;
+    }
+    .gallery {
+      height: 450px !important;
+    }
+    .bottum-name {
+      p {
+        font-size: 14px !important;
+        margin-right: 0px !important;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 769px) {
-  .about-mob h6{
+  .about-mob h6 {
     font-size: 15px !important;
   }
-  .about-mob p{
+  .about-mob p {
     font-size: 15px !important;
   }
-  .main-wrapper .row .center .bottum-name{
+  .main-wrapper .row .center .bottum-name {
     margin-bottom: 20px !important;
   }
-  .contact-wrapper{
+  .contact-wrapper {
     display: block !important;
   }
-  .contact-details{
-    padding-bottom: 60px !important;  
+  .contact-details {
+    padding-bottom: 60px !important;
   }
   .main-wrapper {
     min-height: calc(100vh - 180px) !important;
@@ -401,7 +521,7 @@ height: 70px !important;
 }
 
 @media only screen and (max-width: 769px) {
-  .contact-gray{
+  .contact-gray {
     height: 100% !important;
   }
   .gray-bg {
@@ -450,10 +570,10 @@ height: 70px !important;
   }
 }
 @media only screen and (max-width: 541px) {
-  .about-mob h6{
+  .about-mob h6 {
     font-size: 10px !important;
   }
-  .about-mob p{
+  .about-mob p {
     font-size: 10px !important;
   }
   .gray-bg {
@@ -524,10 +644,9 @@ height: 70px !important;
   }
 }
 @media only screen and (max-width: 376px) {
-  .contact-gray{
+  .contact-gray {
     height: 100% !important;
   }
-
 
   .gray-bg {
     height: 250px !important;
@@ -875,7 +994,7 @@ height: 70px !important;
               .swiper-slide {
                 justify-content: center;
                 display: flex;
-               
+
                 // margin: auto;
                 img {
                   // width: 100%;
@@ -1092,8 +1211,8 @@ height: 70px !important;
   background-color: black;
 }
 
-.about-mob{
-  h6{
+.about-mob {
+  h6 {
     font-family: "Open Sans", sans-serif;
     font-weight: 800;
     font-size: 10px;
@@ -1101,30 +1220,30 @@ height: 70px !important;
     margin-bottom: 10px;
     text-align: center;
   }
-  p{
+  p {
     font-family: "Open Sans", sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 10px;
     text-align: justify;
   }
-  .team{
-    .image-details{
+  .team {
+    .image-details {
       display: flex;
-      img{
+      img {
         width: 50%;
       }
-      .details{
+      .details {
         width: 50%;
         margin-top: auto;
         margin-bottom: auto;
-        p{
+        p {
           text-transform: capitalize;
           margin-bottom: 0;
           font-size: 12px;
         }
       }
-      .tlr{
+      .tlr {
         text-align: right;
       }
     }
