@@ -167,6 +167,9 @@ body {
 @media only screen and (max-width: 769px) {
   .swiper-slide{
     height: 100% !important;
+    img{
+      width: 100%;
+    }
   }
   .about {
     .align-items-cente {
