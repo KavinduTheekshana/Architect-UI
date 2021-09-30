@@ -328,6 +328,10 @@ display: block !important;
 }
 
 // ---------------------- media public --------------
+@media only screen and (max-width: 1024px) {
+
+}
+
 @media only screen and (width: 1024px) {
   .main-wrapper .row .center .content .gray-bg .color .mySwiper .height {
     height: 410px !important;
