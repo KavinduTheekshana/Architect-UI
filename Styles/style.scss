@@ -474,11 +474,30 @@ body {
       margin-top: -30px !important;
     }
     .gallery {
-      height: 450px !important;
+      height: 520px !important;
     }
     .bottum-name {
       p {
         font-size: 14px !important;
+        margin-right: 0px !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .main-wrapper {
+    min-height: calc(100vh - 180px) !important;
+    .content {
+      .menu {
+        height: 500px !important;
+      }
+    }
+    .gallery {
+      height: 500px !important;
+    }
+    .bottum-name {
+      p {
+        font-size: 12px !important;
         margin-right: 0px !important;
       }
     }
@@ -505,11 +524,11 @@ body {
     min-height: calc(100vh - 180px) !important;
     .content {
       .menu {
-        height: 420px !important;
+        height: 400px !important;
       }
     }
     .gallery {
-      height: 420px !important;
+      height: 400px !important;
     }
     .bottum-name {
       p {
@@ -559,7 +578,7 @@ body {
       margin-top: -30px !important;
     }
     .gallery {
-      height: 450px !important;
+      height: 400px !important;
     }
     .bottum-name {
       p {
@@ -1232,6 +1251,7 @@ body {
       display: flex;
       img {
         width: 50%;
+        height: fit-content;
       }
       .details {
         width: 50%;

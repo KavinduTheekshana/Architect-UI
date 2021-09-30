@@ -467,10 +467,26 @@ p {
     margin-top: -30px !important;
   }
   .main-wrapper .gallery {
-    height: 450px !important;
+    height: 520px !important;
   }
   .main-wrapper .bottum-name p {
     font-size: 14px !important;
+    margin-right: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .main-wrapper {
+    min-height: calc(100vh - 180px) !important;
+  }
+  .main-wrapper .content .menu {
+    height: 500px !important;
+  }
+  .main-wrapper .gallery {
+    height: 500px !important;
+  }
+  .main-wrapper .bottum-name p {
+    font-size: 12px !important;
     margin-right: 0px !important;
   }
 }
@@ -495,10 +511,10 @@ p {
     min-height: calc(100vh - 180px) !important;
   }
   .main-wrapper .content .menu {
-    height: 420px !important;
+    height: 400px !important;
   }
   .main-wrapper .gallery {
-    height: 420px !important;
+    height: 400px !important;
   }
   .main-wrapper .bottum-name p {
     font-size: 12px !important;
@@ -548,7 +564,7 @@ p {
     margin-top: -30px !important;
   }
   .main-wrapper .gallery {
-    height: 450px !important;
+    height: 400px !important;
   }
   .main-wrapper .bottum-name p {
     font-size: 14px !important;
@@ -1297,6 +1313,9 @@ p {
 
 .about-mob .team .image-details img {
   width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .about-mob .team .image-details .details {
