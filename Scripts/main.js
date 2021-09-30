@@ -203,17 +203,24 @@ function Justify() {
 // console.log(screen.width);
 
 // console.log(window.innerWidth);
-$(document).ready(function () {
-  var width = $(window).width();
-  // var width = $(document).width();
-  // var width = screen.width;
-  console.log(width);
-  if (width<=769) {
-    $(".swiper-slide").removeClass("height");
-  } else {
-    $(".swiper-slide").addClass("height");
-  }
-});
+
+
+
+
+
+// $(document).ready(function () {
+//   var width = $(window).width();
+//   console.log(width);
+//   if (width<=769) {
+//     $(".swiper-slide").removeClass("height");
+//   } else {
+//     $(".swiper-slide").addClass("height");
+//   }
+// });
+
+
+
+
 
 // window.addEventListener("resize", () => {
 //     var width = $(window).width();

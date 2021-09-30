@@ -166,6 +166,9 @@ body {
 }
 
 @media only screen and (max-width: 769px) {
+  .swiper-slide {
+    height: 100% !important;
+  }
   .about .align-items-cente {
     padding: 20px 0;
   }
@@ -338,7 +341,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1024px) {
   .main-wrapper {
     min-height: calc(100vh - 180px) !important;
   }
@@ -349,7 +352,7 @@ body {
     height: 410px !important;
   }
   .main-wrapper .row .center .content .gray-bg .color .mySwiper .height {
-    height: 410px !important;
+    height: 410px;
   }
 }
 
