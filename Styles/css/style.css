@@ -166,6 +166,12 @@ body {
 }
 
 @media only screen and (max-width: 769px) {
+  .team-mob {
+    display: block !important;
+  }
+  .team-pc {
+    display: none !important;
+  }
   .swiper-slide {
     height: 100% !important;
   }
@@ -456,6 +462,13 @@ body {
 }
 
 @media only screen and (max-width: 376px) {
+  .team-mob .single-image img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .team-mob .single-image p {
+    font-size: 8px !important;
+  }
   .name-top {
     font-size: 10px !important;
   }
@@ -868,6 +881,10 @@ body {
   text-align: justify;
 }
 
+.main-wrapper .row .center .content .gray-bg .color .about .team .ml4 {
+  margin-left: -4px !important;
+}
+
 .main-wrapper .row .center .content .gray-bg .color .about .team .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -897,6 +914,10 @@ body {
 
 .main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image .tar {
   text-align: right;
+}
+
+.main-wrapper .row .center .content .gray-bg .color .about .team .row .single-image .tac {
+  text-align: center;
 }
 
 .main-wrapper .row .center .content .gray-bg .color .contact {

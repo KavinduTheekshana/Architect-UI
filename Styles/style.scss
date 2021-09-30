@@ -165,6 +165,12 @@ body {
   }
 }
 @media only screen and (max-width: 769px) {
+  .team-mob{
+    display: block !important;
+  }
+  .team-pc{
+    display: none !important;
+  }
   .swiper-slide{
     height: 100% !important;
     img{
@@ -456,6 +462,17 @@ body {
   }
 }
 @media only screen and (max-width: 376px) {
+  .team-mob{
+    .single-image{
+      img{
+        width: 80px !important;
+        height: 80px !important;
+      }
+      p{
+        font-size: 8px !important;
+      }
+    }
+  }
   .name-top {
     font-size: 10px !important;
   }
@@ -803,6 +820,9 @@ body {
                 text-align: justify;
               }
               .team {
+                .ml4{
+                  margin-left: -4px !important;
+                }
                 .row{
                   justify-content: space-between;
                   .single-image{
@@ -827,6 +847,9 @@ body {
                     }
                     .tar{
                       text-align: right;
+                    }
+                    .tac{
+                      text-align: center;
                     }
                   }
                 }
