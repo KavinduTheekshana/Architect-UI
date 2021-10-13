@@ -1339,9 +1339,9 @@ p {
 }
 
 .services {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 30px;
 }
 
 .services .service-pop {
@@ -1494,5 +1494,9 @@ p {
     height: 100px;
     opacity: 0;
   }
+}
+
+.swiper-pagination-bullet-active {
+  background: #000 !important;
 }
 /*# sourceMappingURL=style.css.map */

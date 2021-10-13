@@ -1269,9 +1269,9 @@ body {
 }
 
 .services {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 30px;
   .service-pop {
     width: 350px;
     height: 500px;
@@ -1387,6 +1387,10 @@ body {
   }
 }
 
+
+.swiper-pagination-bullet-active{
+background: #000 !important;
+}
 // .wrap {
 //   height: 100%;
 //   display: flex;
