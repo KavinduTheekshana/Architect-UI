@@ -229,3 +229,14 @@ function Justify() {
 //   $(".swiper-slide").addClass("height");
 // }
 // });
+
+$(document).ready(function(){
+  var href_cover = $("#cover_image_gallery").attr('src');
+  $("li").hover(function(){
+    var href = $(this).attr('cover');
+    $("#cover_image_gallery").attr("src", href)
+  
+        }, function(){
+          $("#cover_image_gallery").attr("src", href_cover)
+      });
+    });

@@ -32,35 +32,31 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body onload="Justify()">
     <div class="mob-header">
       <div class="container">
- 
-          <nav
-            class="navbar navbar-expand-lg navbar-light "
-          >
-            <a class="navbar-brand" href="#"
-              ><img src="Image/logo-mob-icon.png" alt=""
-            /></a>
-            <button
-              id="navbar-toggler-menu"
-              class="navbar-toggler"
-              type="button"
-            >
-              <!-- <span class="navbar-toggler-icon"></span> -->
-              <img src="Image/icon/menu.svg" alt="" />
-            </button>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"
+            ><img src="Image/logo-mob-icon.png" alt=""
+          /></a>
+          <button id="navbar-toggler-menu" class="navbar-toggler" type="button">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <img src="Image/icon/menu.svg" alt="" />
+          </button>
 
-            <button
-              id="navbar-toggler-times"
-              class="navbar-toggler d-none"
-              type="button"
-            >
-              <img src="Image/icon/close.svg" alt="" />
-            </button>
-          </nav>
-  
+          <button
+            id="navbar-toggler-times"
+            class="navbar-toggler d-none"
+            type="button"
+          >
+            <img src="Image/icon/close.svg" alt="" />
+          </button>
+        </nav>
         <div class="row ml-0 mr-0 mt-0 mb-4 justify-content-center">
           <div class="col col-md-12 col-lg-9 col-sm-12 center m-0 p-0">
             <p id="character_justify4" class="name-top">
@@ -73,8 +69,8 @@
       <header id="header" class="navbar-demo d-none-custom">
         <div class="nav-bar">
           <nav class="nav flex-column menu-nav">
-            <a class="nav-link active" href="index.html">Home</a>
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" href="about.html">About</a>
 
             <a
               id="gallery-menu"
@@ -125,9 +121,8 @@
         </div>
       </header>
     </div>
-
-    <div class="main-wrapper" onload="Justify()">
-      <div class="container container-full">
+    <div class="main-wrapper">
+      <div class="container">
         <div class="row m-0 p-0">
           <div class="col col-md-12 col-lg-9 col-sm-12 center m-0 p-0">
             <p id="character_justify" class="name">
@@ -138,8 +133,8 @@
                 <div class="menu">
                   <div class="top">
                     <nav class="nav flex-column menu-nav">
-                      <a class="nav-link active" href="index.html">Home</a>
-                      <a class="nav-link" href="about.html">About</a>
+                      <a class="nav-link" href="index.html">Home</a>
+                      <a class="nav-link active" href="about.html">About</a>
                       <a
                         id="gallery-menu"
                         class="nav-link"
@@ -155,26 +150,21 @@
                         >Awards</a
                       >
                       <a class="nav-link" href="contact.html">contact</a>
-                      <a class="nav-link" href="contact.html">contact</a>
-                      <a class="nav-link" href="contact.html">contact</a>
-                      <a class="nav-link" href="contact.html">contact</a>
-                      <a class="nav-link" href="contact.html">contact</a>
-                      <a class="nav-link" href="contact.html">contact</a>
                     </nav>
                   </div>
                   <div id="middle" class="middle">
                     <nav
                       id="second-menu-gallery"
-                      class="nav flex-column second-menu-nav d-none"
+                      class="nav flex-column second-menu-nav"
                     >
                       <ul class="temp-ul">
-                        <li>
+                        <li id="gallery_list" cover="Image/1.jpg">
                           <a class="nav-link" href="gallery-2-6.html"
                             >Lake villa by Carlson
                           </a>
                         </li>
 
-                        <li>
+                        <li id="gallery_list" cover="Image/2.jpg">
                           <a class="nav-link" href="gallery-5-7-12.html"
                             >Urban compact living
                           </a>
@@ -250,6 +240,8 @@
                         </li>
                       </ul>
                     </nav>
+
+        
                   </div>
                   <div id="bottum" class="bottum">
                     <div class="color">
@@ -260,78 +252,148 @@
                   </div>
                 </div>
               </div>
-              <div class="col col-md-12 col-lg-10 p-0 gallery-content-full">
-                <div class="gallery">
-                  <div class="glt1">
-                    <div class="glt1-1">
-                      <a href="gallery-1-9.html">
-                        <img class="image-holder" src="Image/1.jpg" alt=""
-                      /></a>
+
+                  <div class="col col-md-12 col-lg-10 p-0 about-mob d-none">
+                <div class="justify-content-center align-items-cente mt-4">
+                  <h6 class="align-middle">
+                    DAMITH S MUNASINGHE ASSOCIATES (DSMA),
+                  </h6>
+                  <p>
+                    is a registered organization with a qualified young team of
+                    Architects, Interior designers, Landscape Architects,
+                    Engineers, Green Consultants and Quantity Surveyors. The
+                    DSMA provides a total solution of Architectural, Interior
+                    designing, Structural Engineering, MEP Engineering and
+                    Quantity Surveying. They are always specific and committed
+                    to encourage Clients towards the use of environmentally
+                    friendly practices and aesthetically unique design
+                    attributes. (DSMA) is a renowned architectural firm
+                    specializing in the innovative and progressive design of
+                    commercial, industrial, Institutional, Recreational,
+                    Residential projects in Sri Lanka. The architectural Firm is
+                    set up as a design studio. It provides a philosophy
+                    dedicated service to produce the possible best quality
+                    product. DSMA takes every project as a fresh job and crafts
+                    an artifact with a unique character and a meaning after
+                    considering carefully the client’s need.
+                  </p>
+
+                  <div class="team team-mob">
+
+                    <div class="row">
+
+                  
+                    <div class="image-details col-sm-4 col-md-4">
+                      <img src="Image/team/1.jpg" alt="" />
+                      <div class="details">
+                        <p>chartered architect</p>
+                        <p>damith s munasinghe</p>
+                      </div>
                     </div>
-                    <div class="glt1-2">
-                      <a href="gallery-5-7-12.html">
-                        <img class="image-holder" src="Image/5.jpg" alt="" />
-                      </a>
+
+                    <div class="image-details col-sm-4 col-md-4">
+                      <img src="Image/team/1.jpg" alt="" />
+                      <div class="details">
+                        <p>chartered architect</p>
+                        <p>damith s munasinghe</p>
+                      </div>
+                    </div>
+
+                    <div class="image-details col-sm-4 col-md-4">
+                      <img src="Image/team/1.jpg" alt="" />
+                      <div class="details">
+                        <p>chartered architect</p>
+                        <p>damith s munasinghe</p>
+                      </div>
+                    </div>
+
+                    <div class="image-details">
+                      <img src="Image/team/1.jpg" alt="" />
+                      <div class="details">
+                        <p>chartered architect</p>
+                        <p>damith s munasinghe</p>
+                      </div>
                     </div>
                   </div>
-                  <div class="glt2">
-                    <div class="glt2-1">
-                      <div class="glt2-1-1">
-                        <a href="gallery-2-6.html">
-                          <img class="image-holder" src="Image/2.jpg" alt="" />
-                        </a>
-                      </div>
-                      <div class="glt2-1-2">
-                        <a href="gallery-3-4.html">
-                          <img class="image-holder" src="Image/3.jpg" alt="" />
-                        </a>
+                    <div class="image-details">
+                      <img src="Image/team/1.jpg" alt="" />
+                      <div class="details pl-4">
+                        <p>chartered architect</p>
+                        <p>damith s munasinghe</p>
                       </div>
                     </div>
-                    <div class="glt2-2">
-                      <div class="glt2-2-1">
-                        <a href="gallery-2-6.html">
-                          <img class="image-holder" src="Image/6.jpg" alt="" />
-                        </a>
+
+                  <div class="image-details">
+                      <div class="details pr-4">
+                        <p class="tlr">chartered architect</p>
+                        <p class="tlr">sasike piyathilake</p>
                       </div>
-                      <div class="glt2-2-2">
-                        <a href="gallery-5-7-12.html">
-                          <img class="image-holder" src="Image/7.jpg" alt="" />
-                        </a>
+                      <img src="Image/team/2.jpg" alt="" />
+                    </div>
+
+                    <div class="image-details">
+                      <img src="Image/team/3.jpg" alt="" />
+                      <div class="details pl-4">
+                        <p>structural engineer</p>
+                        <p>ajith vandabona</p>
                       </div>
                     </div>
+
+                    <div class="image-details">
+                      <div class="details pr-4">
+                        <p class="tlr">interior designer</p>
+                        <p class="tlr">saman senanayake</p>
+                      </div>
+                      <img src="Image/team/4.jpg" alt="" />
+                    </div>
+
+                    <div class="image-details">
+                      <img src="Image/team/5.jpg" alt="" />
+                      <div class="details pl-4">
+                        <p>3d visualizer</p>
+                        <p>chathura jayalath</p>
+                      </div>
+                    </div>
+
+                    <div class="image-details">
+                      <div class="details pr-4">
+                        <p class="tlr">landscape architect</p>
+                        <p class="tlr">ishara maduranga</p>
+                      </div>
+                      <img src="Image/team/6.jpg" alt="" />
+                    </div>
+
+                    <div class="image-details">
+                      <img src="Image/team/7.jpg" alt="" />
+                      <div class="details pl-4">
+                        <p>architect</p>
+                        <p>chanchala jayasooriya</p>
+                      </div>
+                    </div>
+
+                    <div class="image-details">
+                      <div class="details pr-4">
+                        <p class="tlr">project coordinator</p>
+                        <p class="tlr">dinesha hettiarachchi</p>
+                      </div>
+                      <img src="Image/team/8.jpg" alt="" />
+                    </div>
+
+
+
                   </div>
-                  <div class="glt3">
-                    <div class="glt3-1">
-                      <a href="gallery-3-4.html">
-                        <img class="image-holder" src="Image/4.jpg" alt="" />
-                      </a>
-                    </div>
-                    <div class="glt3-2">
-                      <a href="gallery-8.html">
-                        <img class="image-holder" src="Image/8.jpg" alt="" />
-                      </a>
-                    </div>
-                    <div class="glt3-3">
-                      <a href="gallery-5-7-12.html">
-                        <img class="image-holder" src="Image/12.jpg" alt="" />
-                      </a>
-                    </div>
-                  </div>
-                  <div class="glb1">
-                    <div class="glb1-1">
-                      <a href="gallery-1-9.html">
-                        <img class="image-holder" src="Image/9.jpg" alt="" />
-                      </a>
-                    </div>
-                    <div class="glb1-2">
-                      <a href="gallery-10.html">
-                        <img class="image-holder" src="Image/10.jpg" alt="" />
-                      </a>
-                    </div>
-                    <div class="glb1-3">
-                      <a href="gallery-random.html">
-                        <img class="image-holder" src="Image/11.jpg" alt="" />
-                      </a>
+                </div>
+              </div>
+
+              <div class="col col-md-10 p-0 about-pc">
+                <div class="gray-bg">
+                  <div class="color" style="background-color: #fff;">
+                    <div class="about">
+                      <div class="container p-0">
+                        <div class="center m-auto p-0 hoverimage">
+                       <img src="Image/Awards Cover.jpg" id="cover_image_gallery" style="float: right;"  alt="">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -345,7 +407,63 @@
                 interior designers
               </p>
             </div>
+
           </div>
+
+
+                      <!-- ----------------- Services --------------------- -->
+          <div class="services">
+            
+
+
+            <div class="services-btn-section">
+            <div class="services-btn">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                <img src="Image/logo.png" alt="">
+              </button>
+            </div>
+            <p>Services</p>
+          </div>
+        </div>
+
+
+
+
+        <div class="modal  fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="display: none;">
+          <div class="modal-dialog modal-services modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: transparent;border: none;">
+            
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+
+
+
+      
+              <div class="swiper mySwiper" style="width: 100%;">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="Image/services-1.png" style="width: 100%;" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="Image/services-2.png" style="width: 100%;" alt="">
+                  </div>
+
+               
+                </div>
+                <div class="swiper-button swiper-button-next"></div>
+                <div class="swiper-button swiper-button-prev"></div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+
         </div>
       </div>
     </div>
@@ -368,6 +486,19 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src="Scripts/main.js"></script>
+
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

@@ -159,6 +159,27 @@ body {
   }
 }
 @media only screen and (max-width: 1000px) {
+  .swiper-pagination{
+    display: none !important;
+  }
+  .contact-details {
+    .container {
+      justify-content: center;
+      margin: auto;
+      display: grid;
+    }
+  }
+  .main-wrapper
+    .row
+    .center
+    .content
+    .gray-bg
+    .color
+    .mySwiper
+    .swiper-slide
+    img {
+    object-fit: contain !important;
+  }
   .about-mob {
     display: block !important;
   }
@@ -324,11 +345,24 @@ body {
 // ---------------------- media public --------------
 
 @media only screen and (width: 1024px) {
+
+  .about{
+    .hoverimage{
+      img{
+        height: 410px;
+      }
+    }
+  }
   .main-wrapper .row .center .content .gray-bg .color .mySwiper .height {
     height: 410px !important;
   }
   .main-wrapper .row .center .content .gray-bg {
     height: 410px !important;
+    .swiper-slide {
+      img {
+        height: 410px ;
+      }
+    }
   }
   .main-wrapper
     .row
@@ -358,13 +392,56 @@ body {
     font-size: 9px !important;
   }
 }
+@media (max-width: 1000px) {
+  .col-fw {
+    max-width: 100% !important;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: block;
+  }
+  .navbar-expand-lg {
+    max-width: 690px;
+    justify-content: center;
+    margin: auto;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
+  .main-wrapper .row .center .content .gray-bg .color .about h6{
+    margin-top: 48px !important;
+  }
+  .main-wrapper .row .center .content .gray-bg .color .about .description{
+   padding-right: 10px;
+    overflow: auto;
+    height: 100px;
+  }
+  .about{
+    .hoverimage{
+      overflow: hidden;
+      img{
+        height: 404px !important;
+      }
+    }
+  }
   .main-wrapper {
     min-height: calc(100vh - 180px) !important;
     .content {
       .menu {
         height: 410px !important;
+      }
+      .gray-bg {
+        height: 410px !important;
+        .swiper-slide {
+          img {
+            height: 410px;
+          }
+        }
+      }
+      .contact-details {
+        height: 410px !important;
+        padding-top: 20px;
       }
     }
     .gallery {
@@ -434,7 +511,9 @@ body {
 //     }
 //   }
 // }
-
+.display-content {
+  display: contents;
+}
 @media only screen and (max-width: 1000px) {
   .contact-gray {
     height: 100% !important;
@@ -442,12 +521,13 @@ body {
   .gray-bg {
     height: 450px !important;
     padding: 0 !important;
+
     .mySwiper {
       height: 450px !important;
       .swiper-slide {
         height: 100% !important;
         img {
-          height: 100% !important;
+          // height: 100% !important;
         }
       }
     }
@@ -551,7 +631,7 @@ body {
       .swiper-slide {
         height: 100% !important;
         img {
-          height: 100% !important;
+          height: 410px !important;
         }
       }
     }
@@ -598,6 +678,9 @@ body {
   .gray-bg {
     height: 340px !important;
     padding: 0 !important;
+    margin: auto;
+    justify-content: center;
+    display: contents;
     .mySwiper {
       height: 340px !important;
       .swiper-slide {
@@ -775,10 +858,12 @@ body {
           width: 100%;
           height: 500px;
           .top {
-            padding-top: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             height: 35%;
             width: 100%;
             background-color: #888888;
+            // overflow: auto;
             .menu-nav {
               .nav-link {
                 padding-left: 10px !important;
@@ -1017,7 +1102,7 @@ body {
                 // margin: auto;
                 img {
                   // width: 100%;
-                  height: 100%;
+                  // height: 100%;
                   object-fit: cover;
                   overflow: hidden;
                 }
@@ -1348,14 +1433,14 @@ body {
   .modal-content {
     height: 100%;
     max-width: 90%;
-    .mySwiper{
-      .swiper-wrapper{
-        .swiper-slide{
+    .mySwiper {
+      .swiper-wrapper {
+        .swiper-slide {
           display: flex;
           justify-content: center;
         }
       }
-      .swiper-button{
+      .swiper-button {
         color: white;
       }
     }
@@ -1387,9 +1472,24 @@ body {
   }
 }
 
+.swiper-pagination-bullet-active {
+  background: #000 !important;
+}
+.service-slider {
+  img {
+    width: 100%;
+    height: fit-content !important;
+    margin: auto;
+  }
+}
 
-.swiper-pagination-bullet-active{
-background: #000 !important;
+.about{
+  .hoverimage{
+    overflow: hidden;
+    img{
+      height: 494px;
+    }
+  }
 }
 // .wrap {
 //   height: 100%;
